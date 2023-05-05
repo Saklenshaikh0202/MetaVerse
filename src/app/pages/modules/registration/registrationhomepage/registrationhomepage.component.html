@@ -1,0 +1,75 @@
+<div class="form-container animated flipInY active">
+	<!-- <h2 class="text-center form-title">Create Account</h2> -->
+	<form [formGroup]="CreateOrg" >
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label> First Name </label>
+					<input type="text" placeholder="Ex. John" required name="user_name" formControlName="FirstName">
+					<!-- <p class="error-message">jdnk </p> -->
+
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label> Last name </label>
+					<input type="text" placeholder="Ex. Thomos" required name="user_name" formControlName="Lastname">
+					<!-- <p class="error-message">jdnk </p> -->
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label> Designation </label>
+					<input type="text" placeholder="Designation" required name="user_name" formControlName="Designation">
+					<!-- <p class="error-message">jdnk </p> -->
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label> EmailAddress </label>
+					<input type="text" placeholder="Ex. John@xyz.com" required name="user_name" formControlName="EmailAddress">
+					<!-- <p class="error-message">jdnk </p> -->
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label> Phonenumber </label>
+					<input type="text" placeholder="Phonenumber" required name="user_name" formControlName="Phonenumber">
+					<!-- <p class="error-message">jdnk </p> -->
+				</div>
+			</div>
+			<!-- <div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label>Label</label>
+					<select required="">
+						<option value="">Select</option>
+						<option value="Abc">Abc</option>
+						<option value="Def">Def</option>
+						<option value="Ghi">Ghi</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="ux-input">
+					<label>Label</label>
+					<select required="">
+						<option value="">Select</option>
+						<option value="Abc">Abc</option>
+						<option value="Def">Def</option>
+						<option value="Ghi">Ghi</option>
+					</select>
+				</div>
+			</div> -->
+		</div>
+		<div class="row">
+			<div class="col-12">
+				
+			<div class="text-right">      
+				<!-- <input type="button" value="NEXT" class="btn btn-primary next">     -->
+				<button class="ux-button  cust-pad back sm" type="button" value="Back" (click)="goToPage(1)">Back</button>
+				<button class="ux-button primary cust-pad next sm" type="button" value="NEXT" (click)="getData(CreateOrg.value)" (click)="goToPage(3)">Next</button>    
+			  </div>
+			</div>
+		</div>
+	</form>
+  </div>

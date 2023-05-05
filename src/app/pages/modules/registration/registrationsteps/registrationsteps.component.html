@@ -1,0 +1,201 @@
+<div class="main">
+
+    <!-- Login Container Start -->
+
+    <div class="login-container">
+
+        <div class="promo-container">
+            <!-- <div class="info-box">
+                <h1>Welcome to <br>Brain Bank</h1>
+                
+            </div> -->
+        </div>
+
+        <div class="loginform-container height-scroll">
+
+            <!-- LOGIN FORM :: START -->
+            <div class="lf-form">
+                <div class="login-form prelogins register-form">
+                    <div class="">
+                        <form method="" name="loginform" id="form" action="dashboard.html" class="">
+                            <div class="">
+                                <div class="row bor-b" style="align-items: center;">
+                                    <div class="col-8">
+                                        <h4 class="text-left"><img src="../assets/images/logo/kiya-logo.svg" alt="logo" class="img-fluid" style="width: 200px; height:unset;"> </h4>
+                                        <!-- <h2><button  onclick="window.location.href = '#'"></button></h2> -->
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="login.html">  <img src="../assets/images/svg/close.svg" alt="" class="close"></a>
+                                      
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-wizard">  
+                                            <h2 class="title">Registration</h2>
+                                            <div class="steps">
+                                                <ul>
+                                                    <li class="active">
+                                                        <span>1</span>
+                                                      
+                                                        Business
+                                                        Information
+                                                    </li>
+                                                    <li [class.active] = "activeTab == 'step2' || activeTab=='step3' || activeTab=='step4' || activeTab=='step5'">
+                                                        <span>2</span>
+                                                        Contact
+                                                        Information
+                                                    </li>
+                                                    <!-- <li [class.active] = "activeTab === 'step3' || activeTab=='step4' || activeTab=='step5'">
+                                                        <span>3</span>
+                                                        Security
+                                                        Feauture
+                                                    </li> -->
+                                                    <li [class.active] = "activeTab === 'step3' || activeTab == 'step4' ||activeTab === 'step5'">
+                                                        <span>3</span>
+                                                        Business
+                                                        Verification
+                                                    </li>
+                                                    <li [class.active] = "activeTab == 'step4'">
+                                                        <span>4</span>
+                                                        Store Details
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                          
+                                            <div class="myContainer">
+                                                <ng-container *ngIf="activeTab ==='step1'">
+                                                    <app-tearmsandconditions (nextEvent)="nextstep($event)" (orgdetails)="nextstep3($event)"></app-tearmsandconditions>
+                                                </ng-container>
+                                                <ng-container *ngIf="activeTab ==='step2'">
+                                                    <app-registrationhomepage (nextEvent)="nextstep($event)" (orgdetails)="nextstep1($event)"></app-registrationhomepage>
+                                                </ng-container>
+                                                <!-- <ng-container *ngIf="activeTab ==='step3'">
+                                                    <app-custregistration (nextEvent)="nextstep($event)" (orgdetails)="nextstep2($event)"></app-custregistration>
+                                                </ng-container> -->
+                                                <ng-container *ngIf="activeTab ==='step3'">
+                                                    <app-set-login-credentials (prevEvent)="prevstep($event)"(nextEvent)="nextstep($event)" ></app-set-login-credentials>
+                                                </ng-container>
+                                                <ng-container *ngIf="activeTab ==='step4'">
+                                                    <app-storedetails (nextEvent)="nextstep($event)" [homedata]="homeData" [poidata]="poiData" [memberdata]="memberData"></app-storedetails>
+                                                </ng-container>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="mt-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                            </div>
+                            <div class="col-4">
+                                <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                            </div>
+                            <div class="col-4">
+                                <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Login Container End -->
+
+</div>
+   
+    <!-- <div *ngIf="activeTab =='step2'">
+        <app-tearmsandconditions (nextEvent)="nextstep($event)"></app-tearmsandconditions>
+    </div>
+    <div *ngIf="activeTab =='step3'">
+        <app-custregistration (nextEvent)="nextstep($event)"></app-custregistration>
+    </div>
+    <div *ngIf="activeTab =='step4'">
+        <app-set-login-credentials (prevEvent)="prevstep($event)"(nextEvent)="nextstep($event)"></app-set-login-credentials>
+    </div> -->
+ 
+    <!-- (nextEvent)="nextstep($event)" (termsConditionEvent)="termsConditionPopup($event)" -->
+
+    
+     <!-- User Name Popup Start-->
+
+     <div class="popup-bottom md-popup username-popup">
+        <div class="row1">
+            <div class="col-10">
+                <h4 class="text-left">User Name Policy</h4>
+            </div>
+            <div class="col-2">
+                <button class="ux-button-icon close-btn" (click)="closePopups('username-popup')">
+                    <img src="assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+                </button>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-12">
+                 <h5 class="text-left">The following rules are applicable for setting/modify the User Name.</h5>
+            </div>
+            <div class="col-12 mt-2">
+                 <ul class="orderlist">
+                    <li>Omnichannel Digital Banking application username shall be a minimum of 8 and a maximum of 20 characters with no spaces in-between.</li>
+                    <li>  Username can be alphanumeric with support for special characters like (. and _ )</li>	
+                 </ul>
+            </div>
+        </div>
+		<div class="row1 mt-2">
+			<div class="col-12 col-md-12 text-center">
+				<button class="ux-button secondary sm-mob" (click)="closePopups('username-popup')" >OK</button>
+			</div>
+		 </div>
+	</div>
+
+    <!-- User Name Popup End-->
+
+
+     <!-- Password Popup Start-->
+
+     <div class="popup-bottom md-popup password-popup">
+        <div class="row1">
+            <div class="col-10">
+                <h4 class="text-left">Password Policy</h4>
+            </div>
+            <div class="col-2">
+                <button class="ux-button-icon close-btn" (click)="closePopups('password-popup')">
+                    <img src="assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+                </button>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col-12">
+                 <h5 class="text-left">The following rules are applicable for setting/modify the Password.</h5>
+            </div>
+            <div class="col-12 mt-2">
+                 <ol class="orderlist">
+                    <li> Omnichannel Digital Banking application Password shall be a minimum of 8 and a maximum of 16 characters with no spaces in-between.</li>
+                    <li> Password shall be aphanumeric and should contain atleast.</li>
+                    <ol >
+                    <li>One Capital Alphabet.</li>
+                    <li>One Lower case Aplhabet.</li>
+                    <li>One numeral.</li>
+                    <li>one special character.</li>  
+                    </ol>                
+                    <li>Password cannot consist of all characters of user-id.</li>
+                    <li> Modified password can not be same as any of previous 3 passwords..</li>
+                    <li>In case a customer does not log into Internet Banking for more than 180 days his password will expire.</li>
+                   
+                 </ol>
+            </div>
+        </div>
+		<div class="row1 mt-2">
+			<div class="col-12 col-md-12 text-center">
+				<button class="ux-button secondary sm-mob" (click)="closePopups('password-popup')">OK</button>
+			</div>
+		 </div>
+	</div>
+
+    <!-- Password Popup End-->

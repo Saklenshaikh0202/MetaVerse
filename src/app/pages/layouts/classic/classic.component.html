@@ -1,0 +1,10 @@
+<div class="main bg-m">
+    <app-header (newItemEvent)="addItem($event)"></app-header>
+    <app-sidenav></app-sidenav>
+    <app-notifications [events]="eventsSubject.asObservable()"></app-notifications>
+    <div class="right-main-column">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <app-footer></app-footer>
+</div>

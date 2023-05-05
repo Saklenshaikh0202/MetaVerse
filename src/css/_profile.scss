@@ -1,0 +1,163 @@
+ 
+.text-overflow{
+    white-space: nowrap;
+     overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+// Profile Module CSS
+ 
+.myprofile-info {
+    position: relative;
+    // width: 100%;
+    display: block;
+    height: auto;
+    padding: 15px 0px 15px 85px;
+    // @media (max-width:991px) {
+    //     width: 100%;
+    // }
+
+    @media (max-width:767px) {
+        padding: 15px 0px 15px 65px;
+    }
+
+    .profile-circle {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: rgba($brand-primary-color, 0.08);
+        border: none;
+        text-decoration: none;
+        z-index: 1;
+
+        @media (max-width:767px) {
+            width:55px;
+            height:55px;
+         }
+
+        img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+
+        h4 {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 34px auto;
+            text-decoration: none;
+            color:rgba($brand-primary-color,1);
+
+            @media (min-width:767px) {
+                text-align: center;
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin: 25px auto;
+                display: block;
+                text-decoration: none;
+                color:rgba($brand-primary-color,1);
+            }
+
+        }
+
+        .browse-photo {
+            background:rgba($brand-primary-color, 1);
+            bottom: 0px;
+            right: 0px;
+            padding: 3px 2px;
+            position: absolute;
+            border-radius: 100%;
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+            z-index: 2;
+            border: 1px solid rgba($brand-primary-color, 0.6);
+
+            @media (max-width:767px) {
+                bottom: 2px;
+                right: 1px;
+            }
+
+            img {
+                width: 14px;
+                height: 14px;
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin: 5px 0px 15px 0px;
+        text-align: left;
+        color: lighten($brand-primary-color, 5%);
+        line-height: 1.5rem;
+        text-transform: inherit;
+
+        @media (max-width:767px) {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0px 0px 5px 0px;
+            line-height: 1.5rem;
+        }
+  
+    }
+
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 15px;
+        text-align: left;
+        line-height: 1.4rem;
+
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 15px;
+        text-align: left;
+        color: rgba($black, 0.85);
+        line-height: 1.4rem;
+
+        @media (max-width:767px) {
+            text-align: center;
+            margin: 15px 0px 2px 0px;
+        }
+    }
+
+    em {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        color:rgba($brand-primary-color-medlight, 1);
+        display: block;
+        font-weight: 400;
+        text-align: left;
+
+        img{
+            width:20px;
+            height:20px;
+            position: relative;
+            margin-right:0px;
+        }
+    }
+
+}

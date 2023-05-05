@@ -1,0 +1,230 @@
+
+.chart-box {
+    // background: white;
+    border-radius: 0px;
+    padding: 20px 0px;
+    // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  }
+  .chart-area {
+    background: #2a2a2a;
+    padding: 0px;
+  }
+
+  .chart-area2 {
+	background: rgb(32, 41, 57);
+	padding: 0px;
+}
+
+// .chart-box {
+//     background: white;
+//     // border-radius: 16px;
+//     padding: 20px 0px 10px 0px;
+//     // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+//   }
+//   .chart-area {
+//     background: #fff;
+//     // padding: 15px;
+//   }
+
+  #chart {
+    max-width: 650px;
+    margin: 20px 0px 10px 0px;
+  }
+
+
+  .chart1 {
+    width: 1900px;
+    height:200px;
+	@media (max-width:767px) {	
+		width: 600px;
+    	height:400px;
+	}
+  }
+
+
+  
+/* chart section table data  */
+
+		 div.cachartdatatable {
+				text-align: center;
+				padding: 20px;
+				/*background: #eee;*/
+
+                @media (max-width:767px) {	
+                   overflow: auto;
+               }
+			 
+			}
+			div.cachartdatatable table {
+				/*width: 80%;*/
+				margin: auto;
+				color: #999;
+				/*border-top: 1px solid #444;*/
+				/*padding-top: 20px;*/
+				border-collapse: collapse;
+				background: #333;
+				&.data1{
+					width:100%; 
+					margin: auto;
+					text-align: left;
+
+					tr th em,
+					tr td em {
+						text-align: left;
+					}
+				}
+			
+			}
+			div.cachartdatatable table tr {
+			}
+			div.cachartdatatable table tr th {
+				/*border-bottom:  1px solid #444444;*/
+				background: #444;
+			}
+			div.cachartdatatable table tr td {
+				text-align: right;
+				border-bottom:  1px solid #444444;
+			}
+			div.cachartdatatable table tr:last-child td {
+				border-bottom: none;
+			}
+			div.cachartdatatable table tr th,
+			div.cachartdatatable table tr td {
+				/*border:  1px solid #343434;*/
+				/*border-bottom:  1px solid #343434;*/
+				&.bor-b{
+				   border-bottom: 1px solid #5a5a5a; 
+				}
+			}
+			div.cachartdatatable table tr td:first-child {
+				text-align: left;
+			}
+			div.cachartdatatable table tr th em {
+				font-size: 14px;
+				font-weight: normal;
+				color: #ccc;
+			}
+			div.cachartdatatable table tr th em,
+			div.cachartdatatable table tr td em {
+				font-style: normal;
+				padding: 8px 15px;
+				display: block;
+                color: #ccc;
+			}
+			div.cachartdatatable table tr td em i {
+				display: inline-block;
+				background: #555;
+				width: 16px;
+				height: 16px;
+				border-radius: 8px;
+				margin-right: 5px;
+			}
+			div.cachartdatatable table tr td em i.ind1 {
+				background: #A2B5BB;
+			}
+			div.cachartdatatable table tr td em i.ind2 {
+				background: #495C83;
+			}
+			div.cachartdatatable table tr td em i.ind3 {
+				background: #FFA500;
+			}
+			div.cachartdatatable table tr td em i.ind4 {
+				background: #277BC0;
+			}
+			div.cachartdatatable.tblperdiff table tr :not(td:first-child) em {
+				text-align: center;
+			}
+
+
+
+            #caNoChannelsUsers{
+                width:300px;
+                height:100px;
+                @media (max-width:767px) {	
+                   width:600px;
+                   height:500px;
+                }  
+            }
+
+			.charttmgradientbar {
+				height: 16px;
+				background: #aaa;
+			}
+
+			/* //bubble chart  */
+			.chart-bubble {
+				position: relative;
+			}
+			.chart-bubble .tbubble {
+				background: white;
+				position: absolute;
+				border-radius: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+			}
+			.chart-bubble .tbubble span {
+				color:  white;
+			}
+			.chart-bubble .tbubble em {
+				font-style: normal;
+				color:  white;
+			}
+			.chart-bubble .tbubble.s1 {}
+			.chart-bubble .tbubble.s1 span {font-size: 15px;}
+			.chart-bubble .tbubble.s1 em {font-size: 9px;}
+
+			.chart-bubble .tbubble.s2 {}
+			.chart-bubble .tbubble.s2 span {font-size: 18px;}
+			.chart-bubble .tbubble.s2 em {font-size: 11px;}
+
+			.chart-bubble .tbubble.s3 {}
+			.chart-bubble .tbubble.s3 span {font-size: 22px;}
+			.chart-bubble .tbubble.s3 em {font-size: 13px;}
+			
+			.chart-bubble .tbubble.s4 {}
+			.chart-bubble .tbubble.s4 span {font-size: 26px;}
+			.chart-bubble .tbubble.s4 em {font-size: 15px;}
+
+			.legends-inline {
+				padding: 5px 20px;
+				text-align: center;
+				display: table;
+				width: 100%;
+				height: 100%;
+				ul {
+						margin: 0;
+						padding: 0;
+						display: table-cell;
+						vertical-align: middle;
+						list-style-type: none;
+						li {
+								display: inline-block;
+								margin-right: 15px;
+								span {
+										height: 10px;
+										width: 10px;
+										display: inline-block;
+										&.save-acc {background-color: #B24775;}
+										&.cre-dep {background-color: #FFDF9A;}
+										&.term-dep {background-color: #FF8D73;}
+										&.cash-cre {background-color: #F13C59;}
+										&.loans {background-color: #F2B360;}
+										&.gold-loan {background-color: #633EBB;}
+								}
+								em {
+										font-style: normal;
+										font-size: 10px;
+										color: lighten($black, 60%);
+								}
+								b {display: inline-block;
+									[theme="dark"] & {color: rgba($white, .8);}
+								 @media (max-width: 1100px) {
+							 display: none;
+							}
+								}
+						} /*li end*/
+				} /* ul end */
+		} /* legends-inline add this independent */

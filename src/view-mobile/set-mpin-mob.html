@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Set MPIN</title>
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/lib/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+
+    <div class="main">
+
+		 <!-- Header Section Start in mobile -->
+
+        <header class="global-header brand-bg minus-nav d-block d-sm-none">
+            <div class="in-header">
+                <div class="header-icons-lft">
+                    <div class="header-actions">
+                        <button class="ux-button-header ">
+                        <img src="../assets/images/svg/arrowback.svg" alt="arrow-back-icon" class="img-mlarge">
+                        </button>
+                    </div>
+                </div>
+                <div class="brand-logo">
+                    <h3>Set MPIN</h3>
+                </div>
+                <div class="header-icons-rit">
+                    <div class="header-actions">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header Section End -->
+
+		<!-- Prelogin-page Start-->
+
+        <div class="prelogin-page login-page">
+ 
+           <div class="registration-steps">
+                <div class="row1">
+                    <div class="col-12 position-static">
+    
+                        <div class="inner-header">
+                            <div class="registration-container">
+                                <a class="prev-tab" (click)="mobPrevclick()"><img src="../assets/images/svg/arrowback.svg"></a>  
+                                <h4>Set MPIN</h4>
+                                <!-- <a class="close-registration"><img (click)="mobPrevclick('cross')" src="../assets/images/svg/close-w.svg"></a> -->
+                            </div>
+                        </div>
+    
+                        <div class="registrationsteps-block custom-pad registration-container clearfix mb-0">
+                            <div>
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <form action="#" method="#">
+                                              <div class="row">
+													<div class="col-12">
+														<h5 class="custom-h5">MPIN is a 4 digit PIN, which will be used as a security password for your MHC Bank application</h5>
+													</div>
+												</div>
+												<div class="row mt-4">
+													 <div class="col-12 col-md-6 col-lg-6">
+														 <div class="row">
+															<div Class="col-12">
+																<div class="ux-input password1 mt-0 mb-0">
+																	<h6>New MPIN</h6>
+																</div>
+															</div>
+														 </div>
+														<div class="row3 px-1">
+															<div class="col-sm-3 col-3 col-md-3">
+																<div class="ux-input password1 p1 mb-1">
+																	<input id="spassword1" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)"/>
+																</div>
+															</div>
+															<div class="col-sm-3 col-3 col-md-3">
+																<div class="ux-input password1 p1 mb-1">
+																	<input id="spassword2" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)"/>
+																</div>
+															</div>
+															<div class="col-sm-3 col-3 col-md-3">
+																<div class="ux-input password1 p1 mb-1">
+																	<input id="spassword3" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)"/>
+																</div>
+															</div>
+															<div class="col-sm-3 col-3 col-md-3">
+																<div class="ux-input password1 p1 mb-1">
+																	<input id="spassword4" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)"/>
+																</div>
+															</div>
+														</div>
+														<div class="row3">
+															<div class="col-12">
+																<div class="ux-input password1 p1 mt-0 mb-0">
+																	<p class="error-message"></p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-12 col-md-6 col-lg-6">
+														<div class="row">
+															<div Class="col-12">
+																<div class="ux-input password1 mt-0 mb-0">
+																	<h6>Confirm MPIN</h6>
+																</div>
+															</div>
+														</div>
+														  <div class="row3 px-1">
+																	<div class="col-sm-3 col-3 col-md-3">
+																		<div class="ux-input password1 p1 mb-1">
+																			<input id="cpassword1" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(1, event)" onfocus="onFocusEvents(1)"/>
+																		</div>
+																	</div>
+																	<div class="col-sm-3 col-3 col-md-3">
+																		<div class="ux-input password1 p1 mb-1">
+																			<input id="cpassword2" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(2, event)" onfocus="onFocusEvents(2)"/>
+																		</div>
+																	</div>
+																	<div class="col-sm-3 col-3 col-md-3">
+																		<div class="ux-input password1 p1 mb-1">
+																			<input id="cpassword3" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(3, event)" onfocus="onFocusEvents(3)"/>
+																		</div>
+																	</div>
+																	<div class="col-sm-3 col-3 col-md-3">
+																		<div class="ux-input password1 p1 mb-1">
+																			<input id="cpassword4" type="password" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(4, event)" onfocus="onFocusEvents(4)"/>
+																		</div>
+																	</div>
+																</div>
+																<div class="row3">
+																	<div class="col-12">
+																		<div class="ux-input password1 p1 mt-0 mb-0">
+																			<p class="error-message"></p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													 </div>
+												</div>
+												 
+												<div class="row mt-4">
+													<div class="col-12">
+														<h6>Note :</h6>
+														<ol class="orderlist3"> 
+															<li>MPIN should be 4 digit numeric only.</li>
+															<li>No special characters allowed.</li>
+															<li>This MPIN will be used for login.</li>
+														</ol>
+													</div>
+												</div>
+											 
+                                            <div class="row mt-4">
+                                                <div class="col-12 col-md-12">
+                                                    <ul class="bottom-footer-section">
+                                                        <li>
+                                                            <div class="btn-div hide-m">
+                                                                <button class=" ux-button secondary sm-mob" onclick="window.location.href='#'">Cancel</button>
+                                                            </div>
+                                                            <div class="btn-div w100">
+																  <button class="ux-button sm-mob primary proceed disable">Proceed</button>
+															  </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                
+         </div>
+    
+     <!-- Prelogin-page -->
+
+    </div>
+
+    <!-- Main End -->
+
+
+
+  <!-- =========== modal popup start ===============  -->
+		
+
+  <!-- successs message Popup Start -->
+
+		<div class="popup-bottom success-popup sm-popup">
+			<div class="row mt-3">
+				<div class="col-12">
+					<h4 class="text-center"> <img src="../assets/images/svg/success-circle.svg" alt="error-icon"> Successful</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Your MPIN has been set successfully</p>	 
+				</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-12 text-center">
+					<button  class="ux-button primary submit-btn" onclick="window.location.href = 'set-transaction-pin-mob.html'">Proceed</button>
+				</div>
+			</div>
+		</div> 
+
+		<!-- successs message Popup End -->
+		
+		<div class="ios-nav-overlay"></div>
+
+		<!-- =========== modal popup end ===============  -->
+
+
+		<script src="../js/lib/jquery.min.js"></script>
+		<script src="../js/lib/bootstrap.min.js"></script>
+		<script src="../js/lib/jquery-ui.min.js"></script>
+		<script src="../js/lib/jquery.mousewheel.min.js"></script>
+		<script src="../js/lib/jquery.mCustomScrollbar.js"></script>
+		<script src="../js/lib/owl.carousel.min.js"></script>
+		<script src="../js/lib/popper.min.js"></script>
+		<script src="../js/lib/datatables.min.js"></script>
+		<script src="../js/common.js"></script>     
+		<script>
+
+			$('input').keyup(function(){
+				$('.proceed').removeClass('disable')
+			});
+
+			$("button.proceed").click(function(e){
+				if (!$('div.popup-bottom.success-popup ').hasClass('popup-active')) {
+					$('div.popup-bottom.success-popup ').addClass('popup-active');
+					$( 'div.ios-nav-overlay' ).fadeIn(400);
+				} else {
+					$('div.popup-bottom.success-popup ').removeClass('popup-active');
+					$( 'div.ios-nav-overlay' ).fadeOut(400);
+				}
+			});
+			
+			// $("div.ios-nav-overlay").click(function( ){
+			// 	$('div.popup-bottom.success-popup ').removeClass('popup-active');
+			//   	$( 'div.ios-nav-overlay' ).fadeOut(400);
+			// });
+
+			$("button.close-btn").click(function(){
+		    	console.log('working');
+				$('div.popup-bottom.success-popup ').removeClass('popup-active');
+				$( 'div.ios-nav-overlay' ).fadeOut(400);
+	   		});
+			
+			function getSpasswordElement(index) {
+				return document.getElementById('spassword' + index);
+			}
+			function onKeyUpEvent(index, event) {
+				const eventCode = event.which || event.keyCode;
+				if (getSpasswordElement(index).value.length === 1) {
+				if (index !== 4) {
+					getSpasswordElement(index+ 1).focus();
+				} else {
+					getSpasswordElement(index).blur();
+					// Submit code
+					console.log('submit code ');
+				}
+				}
+				if (eventCode === 12 && index !== 1) {
+				getSpasswordElement(index - 1).focus();
+				}
+			}
+			function onFocusEvent(index) {
+				for (item = 1; item < index; item++) {
+				const currentElement = getSpasswordElement(item);
+				if (!currentElement.value) {
+					currentElement.focus();
+					break;
+				}
+				}
+			}
+			
+			
+			function getCpasswordElement(index) {
+				return document.getElementById('cpassword' + index);
+			}
+			function onKeyUpEvents(index, event) {
+				const eventCode = event.which || event.keyCode;
+				if (getCpasswordElement(index).value.length === 1) {
+				if (index !== 4) {
+					getCpasswordElement(index+ 1).focus();
+				} else {
+					getCpasswordElement(index).blur();
+					// Submit code
+					console.log('submit code ');
+				}
+				}
+				if (eventCode === 12 && index !== 1) {
+				getCpasswordElement(index - 1).focus();
+				}
+			}
+			function onFocusEvents(index) {
+				for (item = 1; item < index; item++) {
+				const currentElement = getCpasswordElement(item);
+				if (!currentElement.value) {
+					currentElement.focus();
+					break;
+				}
+				}
+			} 
+		 
+			$('.pin').click(function(){
+				if($(this).hasClass('disable')){
+					$(this).removeClass('disable');
+					$(this).parent().siblings().children().addClass('disable');
+				}
+				else{
+					$(this).addClass('disable');
+					$(this).parent().siblings().children().removeClass('disable');
+				}
+			});
+			
+			
+		</script>
+		
+	</body>
+</html>

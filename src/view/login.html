@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Login - Metaverse</title>
+    <!-- <link rel="shortcut icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">  -->
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/lib/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/lib/datatables.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- main start -->
+
+    <div class="main">
+
+        <!-- Login Container Start -->
+
+        <div class="login-container">
+
+            <div class="promo-container">
+                <!-- <div class="info-box">
+                    <h1>Welcome to <br>Brain Bank</h1>
+                    
+                </div> -->
+            </div>
+
+            <div class="loginform-container">
+
+                <!-- LOGIN FORM :: START -->
+                <div class="lf-form">
+                    <div class="login-form prelogins">
+                        <div class="text-center">
+                            <div class="col-12">
+                                <div class="logo-info">
+                                    <img src="../assets/images/logo/kiya-logo.svg" alt="logo" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2>Login to Metaverse</h2>
+                                <!-- <h6>Don't have an account? <a href="#" class="text-primary-md"> Sign Up</a></h6> -->
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <form method="" name="loginform" id="form" action="dashboard.html" class="mt-3">
+                                <div class="col-12">
+                                    <div class="ux-input1">
+                                        <label> Email </label>
+                                        <input type="text" placeholder="Enter Email Address" required name="user_name">
+                                        <p class="error-message"> </p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="ux-input1">
+                                        <label>Password </label>
+                                        <input type="password" placeholder="Enter Password" required name="pass_word">
+                                        <p class="error-message"> </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-2">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="ux-selection">
+                                                <label class="ux-selection1">Remember me
+                                                    <input type="checkbox" name="radioboxdemo">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 text-right">
+                                            <!-- <a href="javascript:;" class=" primary" data-ripple>Anchor</a> -->
+                                            <a href="#" class="ux-linkbutton blue-mid">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="text-center">
+                                        <button class="ux-button primary full-width cust-pad" type="button" value="login"
+                                            onclick="login()">Login</button>
+                                    </div>
+                                </div>
+                                <div class="login-sec">
+                                    <h3>Or Login with </h3>
+                                    <ul>
+                                        <li><a href="#"><img src="../assets/images/svg/fb.svg" alt="fb-icon"></a></li>
+                                        <li><a href="#"><img src="../assets/images/svg/twitter.svg" alt="twitter-icon"></a></li>
+                                        <li><a href="#"><img src="../assets/images/svg/google1.svg" alt="google-icon"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 text-center ">
+                                    <!-- <a href="javascript:;" class=" primary" data-ripple>Anchor</a> -->
+                                    <span>New to Metaverse ? <a href="">Register Here</a> </span>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- <div class="mt-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                                </div>
+                                <div class="col-4">
+                                    <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                                </div>
+                                <div class="col-4">
+                                    <a type="button" role="button" class="btn btn-outline-primary social-icon">Primary</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Login Container End -->
+
+    </div>
+
+    <!-- main end -->
+
+
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="../js/lib/jquery-ui.min.js"></script>
+    <script src="../js/lib/owl.carousel.min.js"></script>
+    <script src="../js/lib/popper.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.min.js"></script>
+    <script src="../js/lib/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/lib/datatables.min.js"></script>
+    <!-- <script src="../js/common.js"></script> -->
+    <script>
+
+        function login() {
+                var user = document.loginform.user_name.value;
+                var pass = document.loginform.pass_word.value;
+                if (user == "bankbrain@kiya.ai" && pass == "bb123") {
+                    console.log("123");
+                    document.loginform.submit();
+                } 
+                else{
+                    alert("Please Enter Correct Username and Passowrd");
+                    window.location.href="login.html";
+                    // console.log("hiiiii")
+                }
+            }
+        
+    </script>
+</body>
+
+</html>

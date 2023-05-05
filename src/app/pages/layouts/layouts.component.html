@@ -1,0 +1,34 @@
+<!-- ----------------------------------------------------------------------------------------------------- -->
+<!-- Empty layout -->
+<!-- ----------------------------------------------------------------------------------------------------- -->
+<div class="ios-nav-overlay"></div>
+<!-- <div id="pageLoader" class="loading-backdrop" style="display:none"><img src="assets/images/loader/pageloader.gif"></div> -->
+<empty-layout *ngIf="layout == 'empty'"></empty-layout>
+
+
+<!-- Classic -->
+<classic-layout *ngIf="layout == 'classic'"></classic-layout>
+
+
+<!-- Unity -->
+<!-- <unity-layout *ngIf="layout == 'unity'"></unity-layout> -->
+<unity-layout *ngIf="layout=='unity'"></unity-layout>
+
+<div class="popup-bottom show-common-info sm-popup">
+    <div class="row1">
+        <div class="col-12">
+            <h4 class="text-center"> <img src="./assets/images/svg/information.svg" alt="information-icon">{{ dataService.informationLabel}}
+            </h4>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="col-12">
+            <p *ngIf="dataService.information != ''">{{ dataService.information}}</p>
+        </div>
+    </div>
+    <div class="row1  mt-2">
+        <div class="col-12 text-center" (click)="closePopups('div.popup-bottom.show-common-info')">
+            <button class="ux-button primary submit-btn" type="button">{{dataService.primaryBtnText}}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<div class="popup-bottom otp-verify sm-popup">
+	<div class="row bor-b">
+        <div class="col-10">
+            <h4 class=" text-center">OTP Verification</h4>
+        </div>
+        <div class="col-2">
+            <button class="ux-button-icon close-btn" (click)="closeOtpPopup()">
+                <img src="assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+            </button> 
+        </div>
+        </div>
+		<form [formGroup]="otpFormLimit"> 
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ux-input  p1 mb-0 mt-3 mb-3">
+                                <label class="mb0 text-center custom-label">Enter 4 Digit OTP</label>
+                                <em class="info-message text-center">{{myinputMsg}}</em>
+                            </div> 	 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ux-input">
+                                <label for="">OTP</label>
+                            </div>
+                        </div> 
+                        <div class="col-12 ">
+							<div class="row">
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword1" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(0, $event, 'otp')" (focus)="onFocusEvent(0,'otp')" formControlName="otp1"> </div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword2" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(1, $event, 'otp')" (focus)="onFocusEvent(1,'otp')"  formControlName="otp2"> </div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword3" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(2, $event, 'otp')" (focus)="onFocusEvent(2,'otp')" formControlName="otp3"> </div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword4" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(3, $event, 'otp')" (focus)="onFocusEvent(3,'otp')" formControlName="otp4"> </div>
+								</div>
+								<!-- <div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword5" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(4, $event, 'otp')" (focus)="onFocusEvent(4,'otp')" formControlName="otp5"> </div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="otppassword6" autocomplete="off" #otpRow type="password" numbersOnly maxlength="1" placeholder="●" (keyup)="onKeyUpEventOtp(5, $event, 'otp')" (focus)="onFocusEvent(5,'otp')" formControlName="otp6"> </div>
+								</div> -->
+							</div> 
+                            <div class="row1">
+								<div class="col-12">
+									<div class="ux-input password1 p1 mt-0 mb-0">
+										<p class="error-message"></p>
+									</div>
+									<div class="text-center">
+										<span class="errormsg">{{otpfailMsg}}</span>
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <div class="col-12 mt-1">
+							<p class="text-left"> <span class="success-text" *ngIf="counter > 0" >{{ counter| formatTimer}}</span> </p>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p>Don't receive OTP? <a href="#" (click)="resendOtp('resend')" [ngClass]="counter > 0 ? 'mydisabled' : 'resendActive'" class="link-text primary-text underline"> Resend </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-6 text-center">
+					<button class="ux-button secondary sm-mob close-btn" (click)="closeOtpPopup()">Cancel</button>
+				</div>
+				<div class="col-6 text-center">
+					<button class="ux-button primary sm-mob otp-submit" (click)="validateOtpAddlimit()" [disabled]="otpFormLimit.invalid">Proceed</button>
+				</div>
+            </div>
+        </form>
+		
+</div>

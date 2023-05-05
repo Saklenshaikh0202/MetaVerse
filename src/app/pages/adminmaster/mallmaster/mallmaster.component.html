@@ -1,0 +1,85 @@
+<div class="right-col-container">
+    <div class="body-page-container">
+        <div class="body-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h2> <strong> Mall Master </strong></h2>
+    
+                        <div class="page-parent">
+                            <div class="col-12 col-md-6">
+                                <div class="ux-input">
+                                    <label>Search Your Mall </label>
+                                <input type="text" placeholder="Ex.Xyz" [(ngModel)]="searchText">
+                                <button (click)="search()"  class="ux-button sm primary">Search</button>
+                            </div>
+                        </div>
+                            <div *ngIf="showdata">
+                                <div  *ngFor="let data of getData" >
+                                    <span> MallName : {{data.MallName}}</span> &nbsp;|&nbsp; <span> Area : {{data.Area}}</span> &nbsp;|&nbsp; <span> Location : {{data.Location}}</span> &nbsp;|&nbsp; <span> Address : {{data.Address}}</span>
+                                    <br>
+                                </div> 
+                            </div>
+                            <ng-container *ngIf="openForm">
+                            <div class="form-container animated flipInY active" >
+                                <!-- <h2 class="text-center form-title">Create Account</h2> -->
+                                <form [formGroup]="CreateMall" (ngSubmit)="addMall()">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="ux-input">
+                                                <label> Mall Name </label>
+                                                <input type="text" placeholder="Mall Name" required name="user_name"
+                                                    formControlName="MallName">
+                                                <!-- <p class="error-message">jdnk </p> -->
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="ux-input">
+                                                <label> Area </label>
+                                                <input type="text" placeholder="Area" required name="user_name"
+                                                    formControlName="Area">
+                                                <!-- <p class="error-message">jdnk </p> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="ux-input">
+                                                <label> Location </label>
+                                                <input type="text" placeholder="Location" required name="user_name"
+                                                    formControlName="Location">
+                                                <!-- <p class="error-message">jdnk </p> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="ux-input">
+                                                <label> Address </label>
+                                                <input type="text" placeholder="Address" required name="user_name"
+                                                    formControlName="Address">
+                                                <!-- <p class="error-message">jdnk </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+        
+                                            <div class="text-right">
+                                                <!-- <input type="button" value="NEXT" class="btn btn-primary next">     -->
+                                                <!-- <button class="ux-button  cust-pad back sm" type="button" value="Back" >Back</button> -->
+                                                <button class="ux-button primary cust-pad next sm" type="submit"
+                                                    value="NEXT">submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </ng-container>
+                            <div class="btn-bot">
+                                <button (click)="open()" (click)="hidedata()" class="ux-button sm primary">Add Mall</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

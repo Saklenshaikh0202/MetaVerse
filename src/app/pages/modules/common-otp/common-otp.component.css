@@ -1,0 +1,22 @@
+a.mydisabled {
+  pointer-events: none;
+  cursor: default;
+  color: #bebebe;
+}
+
+.mydisabled {
+  pointer-events: none;
+  cursor: default;
+  color: #bebebe;
+}
+
+a.resendActive {
+  pointer-events: visible;
+  color: #0033a1;
+}
+
+.resendActive {
+  pointer-events: visible;
+  cursor: pointer;
+  color: #0033a1 !important;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Fogot MPIN</title>
+    <link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/lib/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+   
+
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <header class="global-header brand-bg minus-nav d-block d-sm-none">
+            <div class="in-header">
+                <div class="header-icons-lft">
+                    <div class="header-actions">
+                        <button class="ux-button-header ">
+                        <img src="../assets/images/svg/arrowback.svg" alt="arrow-back-icon" class="img-mlarge">
+                        </button>
+                    </div>
+                </div>
+                <div class="brand-logo">
+                    <h3>Fogot MPIN</h3>
+                </div>
+                <div class="header-icons-rit">
+                    <div class="header-actions">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header Section End -->
+
+        <div class="prelogin-page login-page">
+ 
+           <div class="registration-steps">
+                <div class="row1">
+                    <div class="col-12 position-static">
+    
+                        <div class="inner-header">
+                            <div class="registration-container">
+                                <a class="prev-tab" (click)="mobPrevclick()"><img src="../assets/images/svg/arrowback.svg"></a>  
+                                <h4>Fogot MPIN</h4>
+                                <!-- <a class="close-registration"><img (click)="mobPrevclick('cross')" src="../assets/images/svg/close-w.svg"></a> -->
+                            </div>
+                        </div>
+    
+                        <div class="registrationsteps-block custom-pad registration-container clearfix mb-0">
+                            <div>
+                                 <div class="row">
+                                    <div class="col-12">
+                                        <form action="#" method="#">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                                                    <div class="ux-input">
+                                                        <label for="cust-email">Customer Email ID</label>
+                                                        <input type="text" placeholder="Enter Email ID" required >
+                                                        <p class="error-message"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                                                    <div class="ux-input">
+                                                        <label for="mob-number">Registered Mobile Number</label>
+                                                        <input type="text" placeholder="Enter Mobile Number" required >
+                                                        <p class="error-message"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                                                    <div class="ux-input">
+                                                        <label for="nic">NIC Number</label>
+                                                        <input type="text" placeholder="Enter NIC Number" required >
+                                                        <p class="error-message"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-12 col-md-12">
+                                                    <ul class="bottom-footer-section">
+                                                        <li>
+                                                            <div class="btn-div hide-m">
+                                                                <button class=" ux-button secondary sm-mob" onclick="window.location.href='#'">Cancel</button>
+                                                            </div>
+                                                            <div class="btn-div w100">
+                                                                <button class="btn-submit ux-button primary sm-mob" onclick="window.location.href='#'">Proceed</button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+            
+         
+        </div>
+    
+     <!-- Prelogin-page -->
+
+    </div>
+
+    <!-- Main End -->
+
+
+ 
+    <!-- =========== modal popup start ===============  -->
+
+	<!--  OTP Verification Popup Start -->
+
+    <div class="popup-bottom otp-verify md-popup">
+        <div class="row bor-b">
+        <div class="col-12">
+            <h4 class="text-center">OTP Verification</h4>
+        </div>
+        <!-- <div class="col-2"> 
+            <button class="ux-button-icon close-btn">
+                <img src="../assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+            </button> 
+        </div> -->
+        </div>
+        <form action="#" id="token-form"> 
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-10 m-auto">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ux-input  p1 mb-0 mt-3 mb-3">
+                                <label class="mb0 text-center custom-label">Enter 4 Digit OTP</label>
+                                <em class="info-message text-center">Please type OTP sent to your registered mobile number +230 8868 1042 & Email - ID Navin6782@gmail.com</em>
+                            </div> 	 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ux-input">
+                                <label for="">OTP</label>
+                            </div>
+                        </div> 
+                        <div class="col-12 ">
+                                <div class="row3">
+                                    <div class="col-sm-3 col-3 col-md-3">
+                                    <div class="ux-input password1 p1 mb-1">
+                                        <input id="cpassword1" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(1, event)" onfocus="onFocusEvents(1)"/>
+                                        </div> 
+                                </div>
+                                <div class="col-sm-3 col-3 col-md-3">
+                                    <div class="ux-input password1 p1 mb-1">
+                                        <input id="cpassword2" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(2, event)" onfocus="onFocusEvents(2)"/>
+                                        </div> 
+                                </div>
+                                <div class="col-sm-3 col-3 col-md-3">
+                                    <div class="ux-input password1 p1 mb-1">
+                                        <input id="cpassword3" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(3, event)" onfocus="onFocusEvents(3)"/>
+                                        </div> 
+                                </div>
+                                <div class="col-sm-3 col-3 col-md-3">
+                                    <div class="ux-input password1 p1 mb-1">
+                                        <input id="cpassword4" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(4, event)" onfocus="onFocusEvents(4)"/>
+                                        </div> 
+                                </div>
+                                </div> 
+                            <div class="row">
+                                <div class="col-12">
+                                <div class="ux-input password1 p1 mt-0 mb-0">
+                                        <p class="error-message"></p>
+                                    </div> 	 
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12 mt-1">
+                            <p class="text-left">00:30</p>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p>Don't receive OTP? <a href="#" class="link-text primary-text underline"> Resend </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 col-md-12 col-lg-10 m-auto">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                              <button class="token-submit ux-button primary" onclick="window.location.href = '#'">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </form>
+    </div> 
+
+
+    <!--  OTP Verification Popup End -->
+
+
+
+    <!-- Success Modal Start -->
+     <div class="popup-bottom success-popup sm-popup">
+        <div class="row mt-3">
+            <div class="col-12">
+                <h4 class="text-center"> <img src="../assets/images/svg/success-circle.svg" alt="success-icon"> Successful</h4>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                        <p>Customer Registration has done successfully</p>	 
+                    </div>
+                </div>
+            <div class="row  mt-2">
+                <div class="col-12 text-center">
+                    <button  class="ux-button primary submit-btn" onclick="window.location.href = 'set-mpin-mob.html'">Proceed</button>
+                </div>
+            </div>
+    </div>  
+    <!-- Success Modal End -->
+
+    <div class="ios-nav-overlay"></div> 
+
+    <!-- =========== modal popup end ===============  -->
+
+
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="../js/lib/jquery-ui.min.js"></script>
+    <script src="../js/lib/jquery.mousewheel.min.js"></script>
+    <script src="../js/lib/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/lib/owl.carousel.min.js"></script>
+    <script src="../js/lib/popper.min.js"></script>
+    <script src="../js/lib/datatables.min.js"></script>
+    <script src="../js/common.js"></script>
+    
+    <script>
+        $('.nicNo').show();
+        $('.passNo').hide();
+
+        $('input[name=numberid]').change(function(){
+            if($(this).val() !== 'pass'){
+                $('.nicNo').show();
+                $('.passNo').hide();
+            }
+            else{
+                $('.passNo').show();
+                $('.nicNo').hide();
+            }
+        });
+
+
+        $('input').keyup(function(){
+            $('.btn-submit').removeClass('disable')
+        });
+
+        
+        function getSpasswordElement(index) {
+            return document.getElementById('spassword' + index);
+        }
+        function onKeyUpEvent(index, event) {
+            const eventCode = event.which || event.keyCode;
+            if (getSpasswordElement(index).value.length === 1) {
+            if (index !== 4) {
+                getSpasswordElement(index+ 1).focus();
+            } else {
+                getSpasswordElement(index).blur();
+                // Submit code
+                console.log('submit code ');
+            }
+            }
+            if (eventCode === 12 && index !== 1) {
+            getSpasswordElement(index - 1).focus();
+            }
+        }
+        function onFocusEvent(index) {
+            for (item = 1; item < index; item++) {
+            const currentElement = getSpasswordElement(item);
+            if (!currentElement.value) {
+                currentElement.focus();
+                break;
+            }
+            }
+        }
+
+
+        function getCpasswordElement(index) {
+            return document.getElementById('cpassword' + index);
+        }
+        function onKeyUpEvents(index, event) {
+            const eventCode = event.which || event.keyCode;
+            if (getCpasswordElement(index).value.length === 1) {
+            if (index !== 4) {
+                getCpasswordElement(index+ 1).focus();
+            } else {
+                getCpasswordElement(index).blur();
+                // Submit code
+                console.log('submit code ');
+            }
+            }
+            if (eventCode === 12 && index !== 1) {
+            getCpasswordElement(index - 1).focus();
+            }
+        }
+        function onFocusEvents(index) {
+            for (item = 1; item < index; item++) {
+            const currentElement = getCpasswordElement(item);
+            if (!currentElement.value) {
+                currentElement.focus();
+                break;
+            }
+            }
+        } 
+        
+        
+
+    
+        $("button.btn-submit").click(function(){
+            if (!$('div.popup-bottom.otp-verify').hasClass('popup-active') ) {
+                $('div.popup-bottom.otp-verify').addClass('popup-active');
+                $( 'div.ios-nav-overlay' ).fadeIn(400);
+            } else {
+                $('div.popup-bottom.otp-verify').removeClass('popup-active');
+                $( 'div.ios-nav-overlay' ).fadeOut(400);
+            }
+        });
+            
+
+
+        $('button.token-submit').attr('disabled', true);
+        $('button.token-submit').addClass('disable');
+
+        $("input[name='token']").on('keyup',function() {
+            if($(this).val() != '') {
+                $('button.token-submit').attr('disabled' , false);
+                $('button.token-submit').removeClass('disable');
+            }else{
+                $('button.token-submit').attr('disabled' , true);
+                $('button.token-submit').addClass('disable');
+            }
+        });
+
+        $("button.token-submit").click(function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            // console.log('working');
+            $('div.popup-bottom.otp-verify').removeClass('popup-active');
+            if ( !$('div.popup-bottom.success-popup').hasClass('popup-active') ) {
+                    $('div.popup-bottom.success-popup').addClass('popup-active');
+                    $( 'div.ios-nav-overlay' ).fadeIn(400);
+                } else {
+                    $('div.popup-bottom.success-popup').removeClass('popup-active');
+                    $( 'div.ios-nav-overlay' ).fadeOut(400);
+                }
+        });
+
+        $("button.close-btn").click(function () {
+            console.log('working');
+            $('div.popup-bottom.otp-verify').removeClass('popup-active');
+            $('div.ios-nav-overlay').fadeOut(400);
+        });
+
+        // $("div.ios-nav-overlay").click(function( ){
+        // 	$('div.popup-bottom.otp-verify').removeClass('popup-active');
+        // 	$( 'div.ios-nav-overlay' ).fadeOut(400);
+        // });
+
+        
+
+    </script>
+    
+</body>
+
+</html>
+
+ 
+
+

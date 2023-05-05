@@ -1,0 +1,138 @@
+<div class="form-container animated flipInY flipInX active">
+    <form [formGroup]="regmember">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Business Name </label>
+                    <input type="text" placeholder="BusinessName" required="" name="" formControlName="BusinessName">
+                    <!-- <p class="error-message">jdnk </p> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Business type </label>
+                    <input type="text" placeholder="Ex. sole proprietorship, partnership, corporation" required="" name="" formControlName="Businesstype">
+                    <!-- <p class="error-message">jdnk </p> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label>Business Phone number </label>
+                    <input type="text" placeholder="Enter Phone no" required="" name="" formControlName="MobileNo">
+                    <!-- <p class="error-message">jdnk </p> -->
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Physical Address </label>
+                    <input type="text" placeholder="Physical Address" required="" name="">
+                    <p class="error-message">jdnk </p>
+                </div>
+            </div> -->
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label>Business Email Address </label>
+                    <input type="text" placeholder="Email Address" required="" formControlName="Email" name="">
+                    <!-- <p class="error-message">jdnk </p> -->
+                </div>
+            </div>
+            <div class="col-12">
+                <h3> Business Address </h3>
+            </div>
+            <div class="row m-0">
+
+            <!-- <div formGroupName="Businessaddress" class="w-100" style="width: 100%;display: flex;flex-wrap: wrap;"> -->
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label>AddressLine1 </label>
+                        <input type="text" placeholder="AddressLine1" required="" formControlName="AddressLine1" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> City </label>
+                        <input type="text" placeholder="City" required="" formControlName="City" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> State </label>
+                        <input type="text" placeholder="State" required="" formControlName="State" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> Zip Code </label>
+                        <input type="text" placeholder="Zip Code" required="" formControlName="Zip" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> Country </label>
+                        <input type="text" placeholder="Country" required="" formControlName="Country" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> Business Website </label>
+                        <input type="text" placeholder="Business Website" required="" formControlName="Businesswebsite" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> Tax ID </label>
+                        <input type="text" placeholder="Tax ID" required="" formControlName="TaxID" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ux-input">
+                        <label> Company Registartion Number </label>
+                        <input type="text" placeholder="Company Registartion Number" required="" formControlName="CompRegistartionNo" name="">
+                        <!-- <p class="error-message">jdnk </p> -->
+                    </div>
+                </div>
+            <!-- </div> -->
+            </div>
+            <!-- new -->
+            <!-- <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label>Label</label>
+                    <select required="">
+                        <option value="">Select</option>
+                        <option value="Abc">Abc</option>
+                        <option value="Def">Def</option>
+                        <option value="Ghi">Ghi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label>Label</label>
+                    <select required="">
+                        <option value="">Select</option>
+                        <option value="Abc">Abc</option>
+                        <option value="Def">Def</option>
+                        <option value="Ghi">Ghi</option>
+                    </select>
+                </div>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+            <div class="text-right">      
+                <!-- <input type="button" value="NEXT" class="btn btn-primary next">     -->
+                    
+                <button class="ux-button primary cust-pad  next sm" type="button" value="NEXT" (click)="getData(regmember.value)" (click)="changStep(2)">Next</button>    
+              </div>
+            </div>
+        </div>
+    </form>
+  </div>

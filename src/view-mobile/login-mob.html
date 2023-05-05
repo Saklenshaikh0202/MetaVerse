@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Login</title>
+	<link href="../css/lib/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/lib/owl.carousel.min.css" rel="stylesheet">
+	<link href="../css/lib/jquery-ui.min.css" rel="stylesheet">
+	<link href="../css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="main">
+
+		
+    <!-- Prelogin-page Start -->
+
+		<div class="prelogin-page bg-custom mob-login">
+
+		 	<div class="col-12 col-sm-12 h100">
+				<div class="h100">
+					<div class="login-bg">
+						<div class="row">
+							<div class="col-12">
+								<div class="login-header">
+									<div class="brand-logo">
+										<img src="../assets/images/logo/MHC-Logo.svg" alt="MHC-logo">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-12 col-md-12 mb-3">
+								<form action="#" method="#">
+									<div class="whitebg-input mar-custom">
+										<div class="row">
+											<div Class="col-12">
+												<div class="ux-input password1 mt-0 mb-0">
+													<label>Enter 4 Digit MPIN</label>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="row3">
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword1" type="password" maxlength="1"
+																placeholder="●" onkeyup="onKeyUpEvent(1, event)"
+																onfocus="onFocusEvent(1)" />
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword2" type="password" maxlength="1"
+																placeholder="●" onkeyup="onKeyUpEvent(2, event)"
+																onfocus="onFocusEvent(2)" />
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword3" type="password" maxlength="1"
+																placeholder="●" onkeyup="onKeyUpEvent(3, event)"
+																onfocus="onFocusEvent(3)" />
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword4" type="password" maxlength="1"
+																placeholder="●" onkeyup="onKeyUpEvent(4, event)"
+																onfocus="onFocusEvent(4)" />
+														</div>
+													</div>
+												</div>
+												<div class="row3">
+													<div class="col-12">
+														<div class="ux-input password1 p1 mt-0 mb-0">
+															<p class="error-message"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12">
+												<div class="text-right mt-2">
+													<a class="link-text " href="forgot-mpin-mob.html">Forgot MPIN?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<p class="info-text-grey">
+									OR
+								</p>
+							</div>
+							<div class="col-12">
+								<ul class="sim-list">
+									<li>
+										<a href="#">
+											<div class="text-center">
+												<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+													viewBox="0 0 80 80">
+													<g transform="translate(0)">
+														<path class="a"
+															d="M383.541,0h-11.2a2.344,2.344,0,1,0,0,4.687h11.2A3.964,3.964,0,0,1,387.5,8.647v11.2a2.344,2.344,0,0,0,4.688,0V8.647A8.657,8.657,0,0,0,383.541,0Z"
+															transform="translate(-312.188)"></path>
+														<path class="a"
+															d="M2.344,22.187a2.344,2.344,0,0,0,2.344-2.344V8.647a3.964,3.964,0,0,1,3.96-3.959h11.2a2.344,2.344,0,0,0,0-4.687H8.647A8.657,8.657,0,0,0,0,8.647v11.2a2.344,2.344,0,0,0,2.344,2.344Z">
+														</path>
+														<path class="a"
+															d="M19.844,387.5H8.647a3.964,3.964,0,0,1-3.96-3.959v-11.2a2.344,2.344,0,1,0-4.687,0v11.2a8.657,8.657,0,0,0,8.647,8.647h11.2a2.344,2.344,0,0,0,0-4.688Z"
+															transform="translate(0 -312.188)"></path>
+														<path class="a"
+															d="M389.844,370a2.344,2.344,0,0,0-2.344,2.344v11.2a3.964,3.964,0,0,1-3.959,3.959h-11.2a2.344,2.344,0,0,0,0,4.688h11.2a8.657,8.657,0,0,0,8.647-8.647v-11.2A2.344,2.344,0,0,0,389.844,370Z"
+															transform="translate(-312.188 -312.188)"></path>
+														<path class="a"
+															d="M140.512,50.309c-16.268-12.067-33.8-12.374-50.546-.214a2.344,2.344,0,1,0,2.754,3.793c15.132-10.989,30.425-10.625,45,.186a2.344,2.344,0,1,0,2.793-3.765Z"
+															transform="translate(-75.093 -34.691)"></path>
+														<path class="a"
+															d="M101.593,105c-9.957,0-22.757,6.63-28.2,14.794a2.344,2.344,0,1,0,3.9,2.6c4.512-6.769,15.867-12.706,24.3-12.706,8.257,0,19.55,4.405,24.215,12.569a2.344,2.344,0,1,0,4.07-2.325C124.5,110.527,111.887,105,101.593,105Z"
+															transform="translate(-61.593 -88.594)"></path>
+														<path class="a"
+															d="M149.688,251.594c0-7.668,5.678-13.906,12.656-13.906S175,243.926,175,251.594v2.5a2.344,2.344,0,1,0,4.687,0v-2.5c0-10.253-7.78-18.594-17.344-18.594S145,241.341,145,251.594c0,9.966,7.493,15.305,10.8,20.084a2.344,2.344,0,1,0,3.854-2.668C156.075,263.838,149.688,259.549,149.688,251.594Z"
+															transform="translate(-122.344 -196.594)"></path>
+														<path class="a"
+															d="M134.19,206.142C141.434,191.655,128.553,169,108.344,169,94.116,169,81,181.059,81,196.344c0,5.549.712,10.243,4.186,15.111A2.344,2.344,0,1,0,89,208.732c-2.447-3.429-3.314-6.671-3.314-12.389,0-12.069,10.587-22.656,22.656-22.656a22.792,22.792,0,0,1,16.463,7.353c6.21,6.615,8.441,16.5,5.191,23.006-3.384,6.767-14.31,4.849-14.31-3.952,0-17.382-17.805-12.183-14.617.568a2.344,2.344,0,1,0,4.547-1.137c-.819-3.275.683-5.838,2.726-5.838,1.835,0,2.656,3.217,2.656,6.406C111,213.818,128.58,217.362,134.19,206.142Z"
+															transform="translate(-68.344 -142.594)"></path>
+													</g>
+												</svg>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+								<p class="info-text-grey">Login using Biometric</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<div class="text-center">
+									<p class="info-text-m">
+										First time user ?
+										<a href="registration-user-selection-mob.html">Register</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 col-12 col-md-12 mb-2">
+								<div class="slider-section pos-custom">
+									<div class="scroll-box">
+										<div class="owl-carousel box-owl" role="list">
+											<div class="item ux-small-scroll2" role="listitem">
+												<a href="javascript:;">
+													<span>
+														<img src="../assets/images/slides/Banner.png" alt="banner1">
+													</span>
+												</a>
+											</div>
+											<div class="item ux-small-scroll2" role="listitem">
+												<a href="javascript:;">
+													<span>
+														<img src="../assets/images/slides/Banner.png" alt="banner1">
+													</span>
+												</a>
+											</div>
+											<div class="item ux-small-scroll2" role="listitem">
+												<a href="javascript:;">
+													<span>
+														<img src="../assets/images/slides/Banner.png" alt="banner1">
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+				<!-- footer section start -->
+
+						<footer>
+							<nav class="ios-global-nav3">
+								<ul class="lst-ios-nav">
+									<li>
+										<a href="#">
+											<span class="inav-icon">
+												<img src="../assets/images/login/Language.svg" alt="language-icon">
+											</span>
+											Language
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="inav-icon">
+												<img src="../assets/images/login/Contact-Us.svg" alt="contact-icon">
+											</span>
+											Contact Us
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="inav-icon">
+												<img src="../assets/images/login/locate-us.svg" alt="location-icon">
+											</span>
+											Locate Us
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="inav-icon">
+												<img src="../assets/images/login/More-services.svg"
+													alt="more-sevices-icon">
+											</span>
+											More Services
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</footer>
+						<!-- footer section end -->
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<!-- Prelogin-page End -->
+
+
+	</div>
+ 	<!-- Main End -->
+
+
+
+	<!-- =========== modal popup start ===============  -->
+
+
+	<!--  Token Verification Popup Start -->
+
+	<div class="popup-bottom token-info sm-popup">
+		<div class="row bor-b">
+			<div class="col-10">
+				<h4>Token Verification</h4>
+			</div>
+			<div class="col-2">
+				<button class="ux-button-icon close-btn">
+					<img src="../assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+				</button>
+			</div>
+		</div>
+		<form action="#" id="token-form">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="ux-input  p1 mb-0 mt-3 mb-3">
+								<label class="mb0 text-center custom-label">Enter 4 Digit Token</label>
+								<em class="info-message text-center">Please type token sent to your registered Email ID Navin6782@gmail.com</em>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="ux-input">
+								<label for="">Token</label>
+							</div>
+						</div>
+						<div class="col-12 ">
+							<div class="row3">
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="cpassword1" type="password" name="token" maxlength="1"
+											placeholder="●" onkeyup="onKeyUpEvents(1, event)"
+											onfocus="onFocusEvents(1)" />
+									</div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="cpassword2" type="password" name="token" maxlength="1"
+											placeholder="●" onkeyup="onKeyUpEvents(2, event)"
+											onfocus="onFocusEvents(2)" />
+									</div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="cpassword3" type="password" name="token" maxlength="1"
+											placeholder="●" onkeyup="onKeyUpEvents(3, event)"
+											onfocus="onFocusEvents(3)" />
+									</div>
+								</div>
+								<div class="col-sm-3 col-3 col-md-3">
+									<div class="ux-input password1 p1 mb-1">
+										<input id="cpassword4" type="password" name="token" maxlength="1"
+											placeholder="●" onkeyup="onKeyUpEvents(4, event)"
+											onfocus="onFocusEvents(4)" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="ux-input password1 p1 mt-0 mb-0">
+										<p class="error-message"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-2">
+				<div class="col-12 text-center">
+					<button class="token-submit ux-button primary" onclick="window.location.href = '#'">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<!--  Token Verification Popup End -->
+
+
+	<!-- Failed message Popup Start -->
+
+	<div class="popup-bottom error-popup sm-popup">
+		<div class="row bor-b">
+			<div class="col-10">
+				<h4>Failed</h4>
+			</div>
+			<div class="col-2">
+				<button class="ux-button-icon close-btn">
+					<img src="../assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+				</button>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-12">
+				<h5 class="text-center"> <img src="../assets/images/svg/failed-icon.svg" alt="error-icon"> Failed</h5>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<p>Something went wrong. Please try again?</p>
+			</div>
+		</div>
+		<div class="row  mt-2">
+			<div class="col-12 text-center">
+				<button class="ux-button primary submit-btn" onclick="window.location.href = '#'">Retry</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Failed message Popup End -->
+
+
+	<!--  Login Popup Start -->
+
+    <div class="popup-bottom confirmation login-popup sm-popup">
+        <div class="row bor-b">
+            <div class="col-12">
+                <h4 class="text-center">Login to MHC</h4>
+            </div>
+            <!-- <div class="col-2">
+                <button class="ux-button-icon close-btn">
+                    <img src="../assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+                </button> 
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-4 mb-3">
+                    Use your finger for faster easier Access to your account
+                </p> 
+            </div>
+            <div class="col-12">
+                <ul class="sim-list">
+                    <li>
+                        <a href="#">
+                            <div class="text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+                                    viewBox="0 0 80 80">
+                                    <g transform="translate(0)">
+                                        <path class="a"
+                                            d="M383.541,0h-11.2a2.344,2.344,0,1,0,0,4.687h11.2A3.964,3.964,0,0,1,387.5,8.647v11.2a2.344,2.344,0,0,0,4.688,0V8.647A8.657,8.657,0,0,0,383.541,0Z"
+                                            transform="translate(-312.188)"></path>
+                                        <path class="a"
+                                            d="M2.344,22.187a2.344,2.344,0,0,0,2.344-2.344V8.647a3.964,3.964,0,0,1,3.96-3.959h11.2a2.344,2.344,0,0,0,0-4.687H8.647A8.657,8.657,0,0,0,0,8.647v11.2a2.344,2.344,0,0,0,2.344,2.344Z">
+                                        </path>
+                                        <path class="a"
+                                            d="M19.844,387.5H8.647a3.964,3.964,0,0,1-3.96-3.959v-11.2a2.344,2.344,0,1,0-4.687,0v11.2a8.657,8.657,0,0,0,8.647,8.647h11.2a2.344,2.344,0,0,0,0-4.688Z"
+                                            transform="translate(0 -312.188)"></path>
+                                        <path class="a"
+                                            d="M389.844,370a2.344,2.344,0,0,0-2.344,2.344v11.2a3.964,3.964,0,0,1-3.959,3.959h-11.2a2.344,2.344,0,0,0,0,4.688h11.2a8.657,8.657,0,0,0,8.647-8.647v-11.2A2.344,2.344,0,0,0,389.844,370Z"
+                                            transform="translate(-312.188 -312.188)"></path>
+                                        <path class="a"
+                                            d="M140.512,50.309c-16.268-12.067-33.8-12.374-50.546-.214a2.344,2.344,0,1,0,2.754,3.793c15.132-10.989,30.425-10.625,45,.186a2.344,2.344,0,1,0,2.793-3.765Z"
+                                            transform="translate(-75.093 -34.691)"></path>
+                                        <path class="a"
+                                            d="M101.593,105c-9.957,0-22.757,6.63-28.2,14.794a2.344,2.344,0,1,0,3.9,2.6c4.512-6.769,15.867-12.706,24.3-12.706,8.257,0,19.55,4.405,24.215,12.569a2.344,2.344,0,1,0,4.07-2.325C124.5,110.527,111.887,105,101.593,105Z"
+                                            transform="translate(-61.593 -88.594)"></path>
+                                        <path class="a"
+                                            d="M149.688,251.594c0-7.668,5.678-13.906,12.656-13.906S175,243.926,175,251.594v2.5a2.344,2.344,0,1,0,4.687,0v-2.5c0-10.253-7.78-18.594-17.344-18.594S145,241.341,145,251.594c0,9.966,7.493,15.305,10.8,20.084a2.344,2.344,0,1,0,3.854-2.668C156.075,263.838,149.688,259.549,149.688,251.594Z"
+                                            transform="translate(-122.344 -196.594)"></path>
+                                        <path class="a"
+                                            d="M134.19,206.142C141.434,191.655,128.553,169,108.344,169,94.116,169,81,181.059,81,196.344c0,5.549.712,10.243,4.186,15.111A2.344,2.344,0,1,0,89,208.732c-2.447-3.429-3.314-6.671-3.314-12.389,0-12.069,10.587-22.656,22.656-22.656a22.792,22.792,0,0,1,16.463,7.353c6.21,6.615,8.441,16.5,5.191,23.006-3.384,6.767-14.31,4.849-14.31-3.952,0-17.382-17.805-12.183-14.617.568a2.344,2.344,0,1,0,4.547-1.137c-.819-3.275.683-5.838,2.726-5.838,1.835,0,2.656,3.217,2.656,6.406C111,213.818,128.58,217.362,134.19,206.142Z"
+                                            transform="translate(-68.344 -142.594)"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+						<div class="text-center"> 
+							<small>Touch the sensor</small>
+						</div>
+                    </li>
+ 				 </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-6 text-center">
+                <button class="ux-button secondary md close-btn" onclick="window.location.href = '#'" >Cancel</button>
+            </div>
+            <div class="col-6 text-center">
+                <button class="agreeBtn ux-button primary md" onclick="window.location.href = '#'" >Use Me</button>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Login Popup End -->
+
+
+	<div class="ios-nav-overlay"></div>
+
+	<!-- =========== modal popup end ===============  -->
+
+
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/lib/bootstrap.min.js"></script>
+	<script src="../js/lib/jquery-ui.min.js"></script>
+	<script src="../js/lib/owl.carousel.min.js"></script>
+	<script src="../js/lib/popper.min.js"></script>
+	<script src="../js/lib/jquery.mousewheel.min.js"></script>
+	<script src="../js/lib/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/lib/datatables.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<script type="text/javascript">
+		boxCarousel();
+
+		$(function () {
+			$('nav.ios-global-nav3 ul.lst-ios-nav3 li').click(function () {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		})
+
+
+		$("ul.sim-list li a").click(function () {
+			console.log('its working');
+			$("ul.sim-list li a").removeClass("active");
+			if (!$(this).hasClass('active')) {
+				$(this).addClass('active');
+				// $( 'div.ios-nav-overlay' ).fadeIn( 400 );
+				// $( 'body' ).css( 'overflow', 'hidden' );
+			} else {
+				$(this).removeClass('active');
+				// $( 'div.ios-nav-overlay' ).fadeOut(  );
+				// $( 'body' ).css( 'overflow', 'auto' );
+			}
+		});
+
+
+		function getSpasswordElement(index) {
+			return document.getElementById('spassword' + index);
+		}
+		function onKeyUpEvent(index, event) {
+			const eventCode = event.which || event.keyCode;
+			if (getSpasswordElement(index).value.length === 1) {
+				if (index !== 4) {
+					getSpasswordElement(index + 1).focus();
+				} else {
+					getSpasswordElement(index).blur();
+					// Submit code
+					console.log('submit code ');
+				}
+			}
+			if (eventCode === 12 && index !== 1) {
+				getSpasswordElement(index - 1).focus();
+			}
+		}
+		function onFocusEvent(index) {
+			for (item = 1; item < index; item++) {
+				const currentElement = getSpasswordElement(item);
+				if (!currentElement.value) {
+					currentElement.focus();
+					break;
+				}
+			}
+		}
+
+
+		function getCpasswordElement(index) {
+			return document.getElementById('cpassword' + index);
+		}
+		function onKeyUpEvents(index, event) {
+			const eventCode = event.which || event.keyCode;
+			if (getCpasswordElement(index).value.length === 1) {
+				if (index !== 4) {
+					getCpasswordElement(index + 1).focus();
+				} else {
+					getCpasswordElement(index).blur();
+					// Submit code
+					console.log('submit code ');
+				}
+			}
+			if (eventCode === 12 && index !== 1) {
+				getCpasswordElement(index - 1).focus();
+			}
+		}
+		function onFocusEvents(index) {
+			for (item = 1; item < index; item++) {
+				const currentElement = getCpasswordElement(item);
+				if (!currentElement.value) {
+					currentElement.focus();
+					break;
+				}
+			}
+		}
+
+ 
+		$("a.fogot-mpin").click(function () {
+			// console.log('working');
+			if (!$('div.popup-bottom.token-info').hasClass('popup-active')) {
+				$('div.popup-bottom.token-info').addClass('popup-active');
+				$('div.ios-nav-overlay').fadeIn(400);
+			} else {
+				$('div.popup-bottom.token-info').removeClass('popup-active');
+				$('div.ios-nav-overlay').fadeOut(400);
+			}
+		});
+
+  
+		$('button.token-submit').attr('disabled', true);
+		$('button.token-submit').addClass('disable');
+
+
+
+		$("input[name='token']").on('keyup', function () {
+			if ($(this).val() != '') {
+				$('button.token-submit').attr('disabled', false);
+				$('button.token-submit').removeClass('disable');
+			} else {
+				$('button.token-submit').attr('disabled', true);
+				$('button.token-submit').addClass('disable');
+			}
+		});
+
+		$("button.token-submit").click(function (e) {
+			e.stopPropagation();
+			e.preventDefault();
+			// console.log('working');
+			$('div.popup-bottom.token-info').removeClass('popup-active');
+			if (!$('div.popup-bottom.error-popup').hasClass('popup-active')) {
+				$('div.popup-bottom.error-popup').addClass('popup-active');
+				$('div.ios-nav-overlay').fadeIn(400);
+			} else {
+				$('div.popup-bottom.error-popup').removeClass('popup-active');
+				$('div.ios-nav-overlay').fadeOut(400);
+			}
+		});
+
+
+
+		$("button.close-btn").click(function () {
+			console.log('working');
+			$('div.popup-bottom.token-info').removeClass('popup-active');
+			$('div.popup-bottom.error-popup').removeClass('popup-active');
+			$('div.popup-bottom.login-popup').removeClass('popup-active');
+			$('div.ios-nav-overlay').fadeOut(400);
+		});
+
+
+
+		// $("div.ios-nav-overlay").click(function () {
+		// 	// e.stopPropagation();
+		// 	// console.log('working');
+		// 	$('div.popup-bottom.token-info').removeClass('popup-active');
+		// 	$('div.popup-bottom.error-popup').removeClass('popup-active');
+		// 	$('div.ios-nav-overlay').fadeOut(400);
+		// });
+
+
+
+	</script>
+
+</body>
+
+</html>

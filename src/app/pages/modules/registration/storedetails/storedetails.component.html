@@ -1,0 +1,135 @@
+
+
+<form [formGroup]="CreateOrg" (ngSubmit)="signin()" active>
+    <!-- <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="ux-input">
+                <label> Company Name </label>
+                <input type="text" placeholder="Company Name" required name="UserName" 
+                formControlName="CompanyName" 
+                >
+                <p *ngIf="CompanyName?.errors?.['required']" class="error-message">  </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="ux-input">
+                <label> Email </label>
+                <input type="text" placeholder="Email" required name="" 
+                formControlName="Email" -->
+               
+                <!-- <p *ngIf="Email?.errors?.['required']" class="error-message"> </p>
+                <p *ngIf = "Email?.errors?.['checkIfGuestEmailsAreValid']" class="error-message"> </p> -->
+            <!-- </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- 2nd form -->
+    
+        <div class="row">
+            <div class="col-12">
+                <div class="upload-container">
+                    <div class="d-flex side-sec">
+                        <img src="../assets/images/svg/file.svg" alt="photo-gallery">   
+                        <div>
+                            <h2>Upload a Store Logo</h2>
+                            <h3>Upload an image or SVG to use as a logo of your store</h3>
+        
+                        </div>
+                    </div>
+                    <div>
+                        <input #inputField hidden type="file" (change)="onFileSelect($event)" id="files" formControlName="StoreLogo" />
+                        <button class="ux-button primary cust-pad   sm" type="button" (click)="inputField.click()">Choose a FIle</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="upload-container">
+                    <div class="d-flex side-sec">
+                        <img src="../assets/images/svg/file.svg" alt="photo-gallery">   
+                        <div>
+                            <h2>Upload a Store Banner</h2>
+                            <h3>Upload an image or SVG to use as a logo of your store</h3>
+        
+                        </div>
+                    </div>
+                    <div>
+                        <input #inputField1 hidden type="file" (change)="onFileSelect1($event)" id="files" formControlName="StoreBanner" />
+                        <button class="ux-button primary cust-pad   sm" type="button" (click)="inputField1.click()">Choose a FIle</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Store Name </label>
+                    <input type="text" placeholder="Store Name" required="" name="" 
+                    formControlName="StoreName" 
+                    >
+                    <p *ngIf="StoreName?.errors?.['required']" class="error-message"> </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Store Category </label>
+                    <input type="text" placeholder="Store Category " required="" name="" 
+                    formControlName="StoreCategory"
+                    >
+                    <p *ngIf="StoreCategory?.errors?.['required']" class="error-message"> </p>
+                    <!-- <p *ngIf = "emailId?.errors?.['checkIfGuestEmailsAreValid']" class="error-message"> </p> -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Store Discription </label>
+                    <input type="text" placeholder=" Store Description " required="" name="" 
+                    formControlName="StoreDescription"
+                    >
+                    <p *ngIf="StoreDescription?.errors?.['required']" class="error-message"> </p>
+                    <!-- <p *ngIf = "emailId?.errors?.['checkIfGuestEmailsAreValid']" class="error-message"> </p> -->
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> Registration No </label>
+                    <input type="text" placeholder=" Registration No " required="" name="" 
+                    formControlName="RegistrationNo"
+                    >
+                    <p *ngIf="RegistrationNo?.errors?.['required']" class="error-message"> </p>
+                    <p *ngIf = "emailId?.errors?.['checkIfGuestEmailsAreValid']" class="error-message"> </p>
+                </div>
+            </div> -->
+            <!-- <div class="col-12 col-md-6">
+                <div class="ux-input">
+                    <label> GST No </label>
+                    <input type="text" placeholder=" GST No " required="" name="" 
+                    formControlName="GSTNo" -->
+                    <!-- > -->
+                    <!-- <p *ngIf="RegistrationNo?.errors?.['required']" class="error-message"> </p> -->
+                    <!-- <p *ngIf = "emailId?.errors?.['checkIfGuestEmailsAreValid']" class="error-message"> </p> -->
+                <!-- </div>
+            </div> -->
+        </div>
+          
+    
+      <div class="text-right">      
+        <!-- <input type="button" value="NEXT" class="btn btn-primary next">     -->
+        <button class="ux-button  cust-pad back sm next" type="button" value="Back" (click)="goToPage(3)">Back</button>   
+        <button class="ux-button primary cust-pad sm" type="submit" >Register Now</button>   
+        
+      </div>
+    </form>
+<!-- <div style="display: none;">
+    <app-registrationhomepage (orgdetails)="nextstep($event)"></app-registrationhomepage>
+    
+</div> -->
+<!-- <button (click)="tokenValidator()">token</button>  -->
+
+
+
+
+    

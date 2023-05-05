@@ -1,0 +1,280 @@
+
+
+		<div class="main">
+
+			<!--  Header Section Start -->
+			<header class="global-header brand-bg minus-nav">
+				<div class="in-header">
+					<div class="header-icons-lft">
+						<div class="header-actions">
+							<button class="ux-button-header">
+							<img src="assets/images/svg/arrowback.svg" alt="arrow-back-icon" class="img-mlarge" />
+							</button>  
+						</div>
+					</div>
+					<div class="brand-logo">
+						<!-- <img src="assets/images/logo/cbi-logo.png"  alt="cbi-logo" /> -->
+						<h3>Non MHC Customer</h3>
+					</div>
+					<div class="header-icons-rit">
+						<div class="header-actions">
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header Section End -->
+
+
+			<!-- Right Main Column Start -->
+			
+			<div class="right-main-column minus-rt-col">
+				<div class="right-col-container">
+
+					<div class="body-page-container">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12">
+									<div class="white-section2">
+										<div class="row">
+											<div class="col-12">
+												<p class="info-text-grey">Please Provide your details to become a customer of MHC</p>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<form action="#" method="#">
+													<div class="row mt-3">
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-input">
+																<label for="other-name">First Name</label>
+																<input type="text" placeholder="Enter First name" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+													<div class="row  mt-2">
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-input">
+																<label for="surname">Surname</label>
+																<input type="text" placeholder="Enter surname" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+													<div class="row  mt-2">
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-input">
+																<label for="emailid">Customer Email ID</label>
+																<input type="text" placeholder="Enter Email ID" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+													<div class="row  mt-2">
+														<div class="col-sm-5 col-5 col-md-4">
+															<div class="ux-input">
+																<label for="countrycode">Country Code</label>
+																<select required="">
+                                                                    <option value="">Select Code</option>
+                                                                    <option value="+230">+230</option>
+                                                                    <option value="+232">+232</option>
+                                                                 </select>
+																<p class="error-message"></p>
+															</div>
+														</div>
+														<div class="col-sm-7 col-7 col-md-8">
+															<div class="ux-input">
+																<label for="mobnumber">Registered Mobile Number</label>
+																<input type="text" placeholder="Enter Mobile Number" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+                                                    <div class="row  mt-2">
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-input">
+																<label for="residential-address">Residential Address</label>
+																<input type="text" placeholder="Enter Residential Address" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+													<div class="row  mt-2">
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-input">
+																<label for="idType">ID Type</label>
+															 </div>
+														</div>
+														<div class="col-sm-12 col-12 col-md-12">
+															<div class="ux-selection">
+																<label class="ux-selection2 ">NIC Number
+																	<input type="radio" name="numberid" value="nic" checked>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+															<div class="ux-selection">
+																<label class="ux-selection2">Passport Number
+																	<input type="radio" name="numberid" value="pass">
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+														</div>
+														<div class="col-12 col-md-12">
+															<div class="ux-input">
+															 	<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+													<div class="row mt-2">
+														<div class="col-12 nicNo">
+															<div class="ux-input">
+																<label for="mobnumber">NIC Number</label>
+																<input type="text" placeholder="Enter NIC Number" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+														<div class="col-12 passNo">
+															<div class="ux-input">
+																<label for="mobnumber">Passport Number</label>
+																<input type="text" placeholder="Enter Passport Number" required >
+																<p class="error-message"></p>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bottom Button Section Start -->
+
+					<div class="bottom-footer">
+						<div class="container-fluid">
+							<div class="col-12 text-center">
+								<button class="btn-submit ux-button primary disable" (click)='goToPage("mhccustregistration")' data-ripple>Proceed</button>
+							</div>
+						</div>
+					</div>
+	
+					<!-- Bottom Button Section End -->
+
+				</div>
+			</div>
+			<!-- Right Main Column End -->
+
+		</div>
+		<!-- main -->
+
+
+		<!-- =========== modal popup start ===============  -->
+
+		<!--  OTP Verification Popup Start -->
+
+		<div class="popup-bottom otp-verify sm-popup">
+			<div class="row bor-b">
+			<div class="col-10">
+				<h4>OTP Verification</h4>
+			</div>
+			<div class="col-2">
+				<button class="ux-button-icon close-btn">
+					<img src="assets/images/svg/close-b.svg" alt="cross-icon" class="img-vsmall">
+				</button> 
+			</div>
+			</div>
+			<form action="#" id="token-form"> 
+				<div class="row">
+					<div class="col-12 col-md-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="ux-input  p1 mb-0 mt-3 mb-3">
+									<label class="mb0 text-center custom-label">Enter 4 Digit OTP</label>
+									<em class="info-message text-center">Please type OTP sent to your registered mobile number +230 8868 1042 & Email - ID Navin6782@gmail.com</em>
+								</div> 	 
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="ux-input">
+									<label for="">OTP</label>
+								</div>
+							</div> 
+							<div class="col-12 ">
+									<div class="row3">
+										<div class="col-sm-3 col-3 col-md-3">
+										<div class="ux-input password1 p1 mb-1">
+											<input id="cpassword1" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(1, event)" onfocus="onFocusEvents(1)"/>
+											</div> 
+									</div>
+									<div class="col-sm-3 col-3 col-md-3">
+										<div class="ux-input password1 p1 mb-1">
+											<input id="cpassword2" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(2, event)" onfocus="onFocusEvents(2)"/>
+											</div> 
+									</div>
+									<div class="col-sm-3 col-3 col-md-3">
+										<div class="ux-input password1 p1 mb-1">
+											<input id="cpassword3" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(3, event)" onfocus="onFocusEvents(3)"/>
+											</div> 
+									</div>
+									<div class="col-sm-3 col-3 col-md-3">
+										<div class="ux-input password1 p1 mb-1">
+											<input id="cpassword4" type="password" name="token" maxlength="1" placeholder="●" onkeyup="onKeyUpEvents(4, event)" onfocus="onFocusEvents(4)"/>
+											</div> 
+									</div>
+									</div> 
+								<div class="row">
+									<div class="col-12">
+									<div class="ux-input password1 p1 mt-0 mb-0">
+											<p class="error-message"></p>
+										</div> 	 
+									</div>
+								</div> 
+							</div>
+							<div class="col-12 mt-1">
+								<p class="text-left">00:30</p>
+							</div>
+							<div class="col-12 mt-3">
+								<p>Don't receive OTP? <a href="#" class="link-text primary-text underline"> Resend </a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-2">
+					<div class="col-12 text-center">
+					<button class="token-submit ux-button primary" onclick="window.location.href = '#'" >Proceed</button>
+					</div>
+				</div>
+			</form>
+		</div> 
+
+
+		<!--  OTP Verification Popup End -->
+
+
+
+		<!-- Success Modal Start -->
+		<div class="popup-bottom success-popup sm-popup">
+			<div class="row mt-3">
+				<div class="col-12">
+					<h4 class="text-center"> <img src="assets/images/svg/success-circle.svg" alt="success-icon"> Successful</h4>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+							<p>Customer Registration has done successfully</p>	 
+						</div>
+					</div>
+				<div class="row  mt-2">
+					<div class="col-12 text-center">
+						<button  class="ux-button primary submit-btn" onclick="window.location.href = 'non-mhc-congratulation.html'">Proceed</button>
+					</div>
+				</div>
+		</div> 
+		<!-- Success Modal End -->
+
+		<div class="ios-nav-overlay"></div> 

@@ -1,0 +1,374 @@
+/* ====== Common Style :: Start */
+   
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+}
+
+html{
+	overflow:hidden;
+	font-size: 14px;
+}
+ 
+body {
+	background-color: $white;
+	position: relative;
+	// width:1920px;
+	max-width: 100%;
+	margin:0 auto;
+	height:100vh;
+    overflow: hidden;
+	// border:1px solid rgba($black, .1);
+
+	// &.scroll-block{
+	// 	position: fixed;
+	// 	width: 100%;
+	// 	overflow-y: scroll;
+	//  }
+  
+  a.ux-button{text-decoration: none;}
+  
+ 	 &.body-transparent {
+		background-color: transparent;
+	}
+  
+}
+ 
+input, select, textarea {background: transparent;} 
+
+a {
+    cursor: pointer;
+    color:rgba($brand-primary-color, 1);
+    text-decoration:none;
+}
+
+a:hover {
+    color:rgba($brand-primary-color, 0.85);
+    text-decoration: underline;
+}
+
+a, a:hover, a:focus {outline: none;}
+
+input:hover, input:focus, select:hover, select:focus, 
+input[type="checkbox"], input[type="checkbox"]:focus,
+input[type="radio"], input[type="radio"]:focus, .form-control:focus {
+	outline: none;
+	box-shadow: none;
+	// border-color: $black;
+}  
+
+ 
+li {list-style-type: none;}
+
+ul {padding-left: 0;}
+
+
+ 
+h1 {
+    color: rgba($black, 0.85);
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  }
+
+  h2 {
+    color: rgba($black, 0.85);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  }
+
+  h3 {
+    color: rgba($black, 0.85);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  }
+
+  h4 {
+    color: rgba($black, 0.85);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  }
+
+  h5 {
+    color: rgba($black, 0.85);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  }
+
+  h6 {
+    color: rgba($black, 0.85);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    margin: 6px 0px;
+    z-index: 1;
+    display: block;
+  } 
+
+  
+em {font-style: normal;}
+
+small {color: rgba($black, .5);}  
+
+.radio, .checkbox {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.space-margin {margin: 0 -15px;}
+
+.vspacer5 {
+	height: 5px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.vspacer10 {
+	height: 10px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.vspacer15 {
+	height: 15px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.vspacer20 {
+	height: 20px;
+	display: block;
+	width: 100%;
+	clear: both;
+	&.customize{
+	    @media (max-width:767px) {
+			height:5px !important;
+	 	}	
+	}
+}
+.vspacer30 {
+	height: 30px;
+	display: block;
+	width: 100%;
+	clear: both;
+	&.customize{
+	    @media (max-width:767px) {
+			height:15px !important;
+	 	}	
+	}
+}
+
+.vspacer40 {
+	height: 40px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.vspacer50 {
+	height: 50px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.vspacer100 {
+	height: 100px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.vspacer150 {
+	height: 150px;
+	display: block;
+	width: 100%;
+	clear: both;
+}
+  
+.full-width1{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+	margin-left: -20px;
+}
+
+.no-gutters {
+		margin-left: 20px;
+		margin-right: 20px;
+
+		@media screen and (max-width: 767px) {
+			margin-left:15px;
+			margin-right:15px;
+		}
+	}
+ 
+.minus-nav {left: 0 !important;}
+
+.minus-rt-col {margin-left: 0 !important;}
+
+.action-btns {
+	padding: 5px 0;
+	@include flexbox;
+	@include flex-justify-content;
+	-webkit-align-items: center;
+	align-items: center;
+	margin: 0 auto 20px;
+	width: calc(100% - 40px);
+	&.cust-width{
+		width: calc(100% - 40px);
+		@media (max-width: 767px) {
+			width: calc(100% - 30px);
+		}
+
+	}
+	.ux-button {
+		&.btn-cancel {
+			display: none;
+			@media (min-width: 767px) {
+				display: inline-block;
+			}
+		}  
+		& + .ux-button {
+			margin-left: 15px;
+		}
+	}  
+	.btn-timelog {
+		display: none;
+		@media (min-width: 767px) {
+			display: inline-block;
+			text-decoration: underline;
+		}
+	} 
+	&>div {
+		width: 100%;
+		@include flexbox;
+		justify-content: space-between;
+		@media (min-width: 767px) {
+			/*width: auto;*/display: block;
+		}
+	}
+    
+	&.sticky-footer {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 100;
+		background: $white;
+		width: 100%;
+		margin:0;
+		padding:10px 40px;
+		display: block;
+		box-shadow:0 -3px 6px rgba($black,0.16);
+
+	}
+}  
+ 
+.chargesPopup{
+    .popup-body{
+		max-height: 75vh;
+		margin:0 -15px; 
+		padding:0 15px;
+		overflow: auto;
+		text-align: left;	
+		h5 , p , b{
+			display:block; text-align: left;
+		}
+		ul{
+			list-style: disc;
+		}
+    }
+	
+
+}
+
+.card-carousal {
+	.owl-theme .owl-dots .owl-dot{
+		&.active{
+			span {
+				background-color: $yellow;
+			}
+		}
+		 span{
+			margin: 2px 3px;
+		}
+	}
+}
+
+.center-div{
+	margin:0 auto;
+	max-width: 1440px;
+	position: relative;
+ }
+ 
+.legend{
+	ul {
+		margin: 0;
+		li {
+			color: #000;
+			display: inline-block;
+			margin: 0 15px 0 0;
+			font-size: 0.9rem;
+			line-height: 100%;
+		}
+	}
+}
+
+.bg-white1{
+	
+	.dataRow{
+		h6{
+			color: #000;
+			font-size: .8rem;
+			font-weight: 500;
+			text-transform: capitalize;
+			line-height: 1.2rem;
+			margin: 2px 0px;
+			z-index: 1;
+			display: block;
+		}
+		h5{
+			color: #000;
+			font-size: .75rem;
+			font-weight: 500;
+			text-transform: capitalize;
+			line-height: 1.4rem;
+			margin: 2px 0px;
+			z-index: 1;
+			display: block;
+		}
+	}
+}

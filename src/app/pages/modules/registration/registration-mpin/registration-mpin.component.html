@@ -1,0 +1,153 @@
+		<div class="main">
+			<!--  Header Section Start -->
+			<header class="global-header brand-bg minus-nav">
+				<div class="in-header">
+					<div class="header-icons-lft">
+						<div class="header-actions">
+							<button class="ux-button-header">
+							<img src="assets/images/svg/arrowback.svg" alt="arrow-back-icon" class="img-mlarge" />
+							</button>  
+						</div>
+					</div>
+					<div class="brand-logo">
+						<!-- <img src="assets/images/logo/cbi-logo.png"  alt="cbi-logo" /> -->
+						<h3>Set MPIN</h3>
+					</div>
+					<div class="header-icons-rit">
+						<div class="header-actions">
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header Section End -->
+			<!-- Right Main Column Start -->
+			<div class="right-main-column minus-rt-col login-pin-wrapper">
+				<div class="right-col-container pad-b pb-0">
+					<div class="body-page-container">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-12">
+									<div class="white-section2">
+										<div class="row">
+											<div class="col-12">
+												<p>MPIN is a 4 digit PIN, which will be used as a security password for your MHC Bank application</p>
+											</div>
+										</div>
+										<div class="row mt-4">
+											<div Class="col-12">
+												<div class="ux-input password1 mt-0 mb-0">
+													<h6>New MPIN</h6>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="row3 px-1">
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword0" #sMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(0, $event,'spassword')" (focus)="onFocus(0,'spassword')" formControlName="confMpin0"> 
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword1" #sMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(1, $event,'spassword')" (focus)="onFocus(1,'spassword')" formControlName="confMpin1"> 
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword2" #sMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(2, $event,'spassword')" (focus)="onFocus(2,'spassword')" formControlName="confMpin2">
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="spassword3" #sMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(3, $event,'spassword')" (focus)="onFocus(3,'spassword')" formControlName="confMpin3">
+														</div>
+													</div>
+												</div>
+												<div class="row3">
+													<div class="col-12">
+														<div class="ux-input password1 p1 mt-0 mb-0">
+															<p class="error-message"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-4">
+											<div Class="col-12">
+												<div class="ux-input password1 mt-0 mb-0">
+													<h6>Confirm MPIN</h6>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="row3 px-1">
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="cpassword0" #cMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(0, $event,'cpassword')" (focus)="onFocus(0,'cpassword')" formControlName="confMpin1"> </div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="cpassword1" #cMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(1, $event,'cpassword')" (focus)="onFocus(1,'cpassword')" formControlName="confMpin2">
+														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="cpassword2" #cMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(2, $event,'cpassword')" (focus)="onFocus(1,'cpassword')" formControlName="confMpin3">														</div>
+													</div>
+													<div class="col-sm-3 col-3 col-md-3">
+														<div class="ux-input password1 p1 mb-1">
+															<input id="cpassword3" #cMpin type="tel"  maxlength="1" placeholder="●" (keyup)="onKeyUp(3, $event,'cpassword')" (focus)="onFocus(1,'cpassword')" formControlName="confMpin4">														</div>
+													</div>
+												</div>
+												<div class="row3">
+													<div class="col-12">
+														<div class="ux-input password1 p1 mt-0 mb-0">
+															<p class="error-message"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-4">
+											<div class="col-12">
+												<h6>Note :</h6>
+												<ol class="orderlist3"> 
+													<li>MPIN should be 4 digit numeric only.</li>
+													<li>No special characters allowed.</li>
+													<li>This MPIN will be used for login.</li>
+												</ol>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+			<!-- Right Main Column End -->
+		</div>
+		<!-- main -->
+
+		<!-- =========== modal popup start ===============  -->
+		
+		<!-- successs message Popup Start -->
+
+		<div class="popup-bottom success-popup sm-popup">
+			<div class="row mt-3">
+				<div class="col-12">
+					<h4 class="text-center"> <img src="assets/images/svg/success-circle.svg" alt="error-icon"> Successful</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p>Your MPIN has been set successfully</p>	 
+				</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-12 text-center">
+					<button  class="ux-button primary submit-btn" onclick="window.location.href = 'set-transaction-pin.html'">Proceed</button>
+				</div>
+			</div>
+		</div> 
+
+		<!-- successs message Popup End -->
+		<div class="ios-nav-overlay"></div>
+	

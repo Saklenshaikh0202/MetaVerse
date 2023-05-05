@@ -1,0 +1,116 @@
+<div class="main">
+
+    <div class="login-container">
+        <div class="promo-container">
+            <!-- <div class="info-box">
+                <h1>Welcome to <br>Brain Bank</h1>
+                
+            </div> -->
+        </div>
+        <div class="loginform-container">
+            <div class="lf-form">
+                <div class="login-form prelogins">
+
+                    <div class="text-center">
+                        <div class="col-12">
+                            <div class="logo-info">
+                                <img src="assets/images/logo/kiya-logo.svg" alt="logo" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h2>Login to Metaverse</h2>
+                            <!-- <h6>Don't have an account? <a href="#" class="text-primary-md"> Sign Up</a></h6> -->
+                        </div>
+                    </div>
+
+                    <div class="mt-2">
+                        <form [formGroup]="loginForm" #signInNgForm="ngForm" id="form" class="mt-3">
+                                       
+                                            <div Class="col-12">
+                                                <div class="ux-input1">
+                                                    <label>Email</label>
+                                                    <input type="text" placeholder="Enter Email"
+                                                    formControlName = "email">
+                                                    <p class="error-message"
+                                                        *ngIf="signInForm.controls['email'].touched && signInForm.controls['email'].hasError('required')">
+                                                        Please enter Email Id</p>
+                                                    <p class="error-message"
+                                                        *ngIf="signInForm.controls['email'].hasError('email')">Please
+                                                        enter valid Email Id</p>
+                                                    <!-- <p class="text-right"><a href="javascript:;" class="reg-txt check-availability">Forgot Username?</a></p> -->
+                                                </div>
+                                            </div>
+                                            <div Class="col-12">
+                                                <div class="ux-input1">
+                                                    <label>Password</label>
+                                                    <input type="password" placeholder="Enter Password"
+                                                    formControlName = "password">
+                                                    <a class="show-keyboard"></a>
+                                                    <p class="error-message"
+                                                        *ngIf="signInForm.controls['password'].touched && signInForm.controls['password'].hasError('required')">
+                                                        Please enter password</p>
+                                                    <!-- <p class="text-right"><a href="javascript:;" class="reg-txt check-availability">Forgot Password?</a></p> -->
+
+                                                </div>
+                                            </div>
+                                        
+                                        <div class="col-12 my-2">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="ux-selection">
+                                                        <label class="ux-selection1">Remember me
+                                                            <input type="checkbox" name="radioboxdemo">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 text-right">
+                                                    <!-- <a href="javascript:;" class=" primary" data-ripple>Anchor</a> -->
+                                                    <a href="#" class="ux-linkbutton blue-mid">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <div class="text-center">
+                                                <button class="ux-button primary full-width cust-pad" type="button" value="login" (click)="signIn()"
+                                                    >Login</button>
+                                            </div>
+                                        </div>
+                                        <div class="login-sec">
+                                            <h3>Or Login with </h3>
+                                            <ul>
+                                                <li><a href="#"><img src="assets/images/svg/fb.svg" alt="fb-icon"></a></li>
+                                                <li><a href="#"><img src="assets/images/svg/twitter.svg" alt="twitter-icon"></a></li>
+                                                <li><a href="#"><img src="assets/images/svg/google1.svg" alt="google-icon"></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 text-center ">
+                                            <!-- <a href="javascript:;" class=" primary" data-ripple>Anchor</a> -->
+                                            <span>New to Metaverse ? <a routerLink="/registrationsteps">Register Here</a> </span>
+                                        </div>
+
+                        </form>
+                                
+                    </div>
+
+
+
+
+                      
+
+                        <!-- Loginform Container End -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- .full-container -->
+
+</div>
+
+    <!-- .prelogin-page -->
+
+<ng-container *ngIf="otpstart">
+   <app-common-otp [myinputMsg]="myInputMessage" (myOutput) ="GetChildData($event)"></app-common-otp>
+</ng-container>

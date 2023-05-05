@@ -1,0 +1,160 @@
+<div class="right-col-container pad-b">
+
+    <div class="body-page-container">
+        <div class="#body-content">
+            <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="" style="margin-top:70px">
+                        <div class=" overlay_1" style="">
+                            <div class="row po-a" style=" ">
+                                <div class="col-12 text-left">
+                                    <button class="ux-button primary sm" routerLink="/dashboard"> Back</button>
+                                </div>
+                            </div>
+                            <!-- <iframe src="https://meta.kiya.ai/ToolKit_V1.1/index.html" frameborder="0" style="width: 100%;height: 100vh;"></iframe> -->
+                            <div class="row">
+                              <div class="col-12">
+                                <div [hidden]="!loadUnity" frameborder="0" style="">
+                                    <!-- <video id="background-video2" autoplay="" loop="" muted="" [src]="bgVideoSrc">
+                                      <source playsinline="true" webkit-playsinline="true" type="video/mp4">
+                                    </video> -->
+                                    
+                                    <div class="">
+                                      <div class="basicloading">
+                                        <ul>
+                                          <li>
+                                            <div id="output">
+                                              <h2 id="funny-day"><span id="data" #datamsg></span></h2>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div id="unity-progress-bar-empty">
+                                              <div id="unity-progress-bar-full" #unityProgressBarFull></div>
+                                            </div>
+                                            <div id="progressBar" #progressBar>
+                                              <div></div>
+                                              <div class="absolute">
+                                                <div id="emptyBar"></div>
+                                                <div id="fullBar"></div>
+                                              </div>
+                                            </div>
+                                            <div id="unity-warning" #unitywarning> </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="unityComp">
+                                        <div id="unity-container" #unityContainer class="metaclass unity-desktop">
+                                          <!-- canvas id="unity-canvas" width=960 height=600></canvas -->
+                                          <canvas id="unity-canvas" #unityCanvas style="width:100%;height:75vh;"></canvas>
+                                          <div id="unity-loading-bar" #unityLoadingBar>
+                                            <!-- div id="unity-logo"></div -->
+                                            <div id="unity-progress-bar-empty">
+                                              <div id="unity-progress-bar-full" #unityProgressBarFull></div>
+                                            </div>
+                                            <div id="progressBar" #progressBar>
+                                              <div>Loading Metaverse Toolkit...</div>
+                                              <div class="absolute">
+                                                <div id="emptyBar"></div>
+                                                <div id="fullBar"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div id="unity-warning" #unitywarning> </div>
+                                          <div id="unity-mobile-warning" #unityMobileWarning>
+                                            This version does not support on some browsers on mobile, kindly use laptops or desktops for best
+                                            experience.
+                                          </div>
+                                        </div>
+                                  
+                                        <!--div id="unity-footer">
+                                          <div id="unity-webgl-logo"></div>
+                                          <div id="unity-fullscreen-button"></div>
+                                          <div id="unity-build-title">BharatMeta</div>
+                                        </div>
+                                      </div
+                                    <div id="unity-youtube-videoPlayer"></div>
+                                    <div id="transparent-box"></div>-->
+                                        <!--<iframe width="480" height="320"></iframe>-->
+                                      </div>
+                                    </div>
+                                    </div>
+
+                              </div>
+                              <div class="col-3 d-none">
+                                <div class="left-sec">
+                                    <p class="sec-title">Choose Layout to Create Store</p>
+                                    <div class="blue-box">
+                                        <picture>
+                                            <img src="../assets/images/svg/character.svg" alt="character" class="img-fluid">
+                                        </picture>
+                                        <h2 class="typo-1 margin-20 t-c">Create Your Store with few Simple Steps</h2>
+                                        <div class="blue-inner">
+                                            <ul>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-3 text-center">
+                                                            <img src="../assets/images/svg/steper-1.svg" alt="stper-icon">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div class="col-no-gutter-15">
+                                                                <span class="typo-2">Step 1</span>
+                                                                <h5 class="typo-1 ">Select Template / configure your own store</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-3 text-center">
+                                                            <img src="../assets/images/svg/steper-2.svg" alt="stper-icon">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div class="col-no-gutter-15">
+                                                                <span class="typo-2">Step 2</span>
+                                                                <h5 class="typo-1 ">Build your store, Set Pricing and save it </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-3 text-center">
+                                                            <img src="../assets/images/svg/steper-3.svg" alt="stper-icon">
+                                                        </div>
+                                                        <div class="col-9">
+                                                            <div class="col-no-gutter-15">
+                                                                <span class="typo-2">Step 3</span>
+                                                                <h5 class="typo-1 ">Once completed, Publish your store in Metaverse</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-button">
+                                            <ul>
+                                                <li>
+                                                    <button class=" ux-button sm"> Store History</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ux-button sm primary" (click)="gotoMetaBuild()"> Create Store</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 
+            </div>
+        </div>
+     </div>
+  
+</div>

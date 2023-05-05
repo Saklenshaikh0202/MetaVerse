@@ -1,0 +1,47 @@
+ <!-- Start Global Nav -->
+
+ <nav class="global-nav">
+    <div class="nav-items scrollbar">
+        <!-- <div class="nav-header">
+            <a href="javascript:;" class="btn-closeglnav hi-btn-menu"></a>
+            <div class="logo-info">
+                <div class="brand-logo">
+                    <a href="#">
+                    <img src="assets/images/logo/MHC-Logo2.svg" alt="MHC-logo"> 
+                    </a>
+                </div>
+             </div>
+        </div> -->
+        <ul class="lst-nav-items3">            
+            <li *ngFor="let menu of mainMenuList;let i=index">
+                <a [ngClass]="menu?.subMenu.length > 0 ? 'glnv-dropdown' : menu.route == isSelectedRoute ? 'active-data':'' " (click)="goToPage(menu.route)">
+                <!-- <a [ngClass]="{'active-data':menu.Status === 'Active'} " (click)="goToPage(menu.route)"> -->
+
+                <!-- <a [ngClass]="{'active-data':menu.Status === 'Active',menu?.subMenu.length > 0 ? 'glnv-dropdown': menu.route == isSelectedRoute ? 'active':} " (click)="goToPage(menu.route)"> -->
+                    <img src="assets/images/sidemenu-mob/{{menu.icon}}" alt="{{menu.icon}}-icon" class="omniimg"> 
+                    {{menu.menuName}}
+                    <span class="chevron" *ngIf="menu.subMenu.length > 0"></span>
+                </a>
+                <div *ngIf="menu?.subMenu.length > 0" class="mysubnavigation-items ">
+                    <ul class="lst-subnavigation">
+                    <li *ngFor="let subMenu of menu.subMenu;let i=index">
+                        <!-- {{subMenu.subSubMenu.length}} -->
+                        <a   [ngClass]="subMenu.subSubMenu.length > 0 ? 'glnv-dropdown'  : ''"  (click)="goToPage(subMenu.route)">{{subMenu.menuName}} <span class="chevron" *ngIf="subMenu.subSubMenu.length > 0"></span></a> 
+                        <div  *ngIf="subMenu.subSubMenu.length > 0" class="mysubnavigation-items sub-menu">
+                            <ul class="lst-subnavigation">
+                                <li *ngFor="let subSubMenu of subMenu.subSubMenu;let i=index">
+                                    <a title="{{subSubMenu.menuName}}" (click)="goToPage(subSubMenu.route)">{{subSubMenu.menuName}}</a>
+                                </li>                                   
+                            </ul>
+                        </div>
+                    </li>                        
+                    </ul>
+                </div>
+            </li> 
+        </ul>
+    </div>
+</nav>
+
+<div class="nav-overlay"></div>
+
+<!-- End Global Nav -->
